@@ -1512,7 +1512,49 @@ footer {
 .mobile__select__city__show {
 	transform: translateY(0);
 }
-
+label.error {
+	font-size: 12px;
+	color: red;
+}
+@keyframes t772__icon-anim {
+	0% {
+		transform: translate3d(-20px, 0, 0);
+		opacity: 0
+	}
+	10% {
+		transform: translate3d(-20px, 0, 0);
+		opacity: 0
+	}
+	20% {
+		transform: translate3d(-20px, 0, 0);
+		opacity: 1
+	}
+	70% {
+		transform: translate3d(0, 0, 0);
+		opacity: 1
+	}
+	80% {
+		transform: translate3d(0, 0, 0);
+		opacity: 1
+	}
+	81% {
+		transform: translate3d(0, 0, 0);
+		opacity: 0
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+		opacity: 0
+	}
+}
+.t772__scroll-icon {
+	animation: t772__icon-anim 1.5s infinite
+}
+.scroll__alert {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 30px;
+	display: none;
+}
 @import "_articles";
 @import "_catalog";
 @import "_product";

@@ -88,6 +88,31 @@
   }
 }
 @media screen and (max-width: 900px) {
+  .scroll__alert {
+    display: -webkit-box;
+    display: flex;
+  }
+  .article__btnblock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: start;
+            align-items: flex-start;
+    padding: 52px 20px;
+  }
+  .table__wrapper {
+    overflow-x: scroll;
+  }
+  table {
+    width: 100%;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+  }
+  .article__btnblock .btn {
+    margin-left: 0;
+    margin-top: 36px;
+  }
   .product__content {
     margin-top: 30px;
   }

@@ -117,4 +117,23 @@ $(document).ready(function(){
 	$('.mobile__head__sity').click(function(){
 		$('.mobile__select__city').toggleClass('mobile__select__city__show');
 	});
+
+
+	$.validator.addMethod("phone", function(value) {
+		return value.replace(/\D+/g,"").length >= 11;
+	}, 'Веедите номер телефона полностью');
+
+	$('form[data-validate]').each(function(i,el){
+		$(el).validate({
+			rules: {
+				phone: "phone"
+			}
+		});
+	});
+
+	$("input[data-mask='phone']").mask("+7 (999) 999-9999",
+		{
+			autoclear: false
+		}
+	);
 });

@@ -685,9 +685,9 @@
         <div class="modal">
           <div class="modal__close"></div>
           <div class="modal__title">Заказать звонок</div>
-          <form action="">
+          <form data-validate="1" action="">
             <input type="text" placeholder="Ваше имя" class="input__border"/>
-            <input type="text" placeholder="Телефон" class="input__border"/>
+            <input data-mask="phone" type="text" placeholder="Телефон" name="phone" class="input__border"/>
             <button class="btn">Получить консультацию</button>
             <div class="modal__form__alert">* Мы не рассылаем спам и номер никому не передаем</div>
           </form>
@@ -711,6 +711,8 @@
       <script src="js/jquery.lazy.min.js"></script>
       <script src="https://api-maps.yandex.ru/2.1/?apikey=&lt;fed58e3e-122a-4b9a-9b1c-60d19ebb0a39&gt;&amp;lang=ru_RU"></script>
       <script src="js/mapbasics.js?v11"></script>
+      <script src="js/mask.js"></script>
+      <script src="js/validate.js"></script>
       <script src="js/main.js?v11"></script>
     </div>
   </body>
