@@ -698,6 +698,7 @@ select {
   width: max-content;
   position: relative;
   -webkit-transform: translateX(-100px);
+      -ms-transform: translateX(-100px);
           transform: translateX(-100px);
 }
 .calc__form * {
@@ -852,6 +853,7 @@ select {
 }
 .comand__slider__item__desc .section-3__alert__icon {
   -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
           transform: translateY(10px);
 }
 .objects {
@@ -1369,6 +1371,7 @@ footer * {
   top: 146px;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
 .modal form {
@@ -1471,6 +1474,7 @@ footer * {
   box-shadow: -5px 2px 7px rgba(0, 0, 0, 0.290729);
   padding: 20px;
   -webkit-transform: translateX(110%);
+      -ms-transform: translateX(110%);
           transform: translateX(110%);
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -1481,6 +1485,7 @@ footer * {
 }
 .mobile__nav__show {
   -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
           transform: translateX(0);
 }
 .mobile__nav__links {
@@ -1552,6 +1557,7 @@ footer * {
   -webkit-box-direction: normal;
           flex-direction: column;
   -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
           transform: translateY(-100%);
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -1571,6 +1577,7 @@ footer * {
 }
 .mobile__select__city__show {
   -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
           transform: translateY(0);
 }
 label.error {
@@ -1898,6 +1905,7 @@ label.error {
   padding: 9px 20px;
   color: white;
   font-size: 14px;
+  margin-top: -5px;
 }
 .article__expert {
   padding: 30px 40px;
