@@ -172,6 +172,76 @@ html(lang="ru")
 
 			
 			
+
+			//-COOCKIE ALERT
+			.coockie__alert(data-alert="coockie")
+				.container
+					.coockie__alert__close(data-click-alert-close="coockie")
+					.coockie__alert__message Этот сайт использует файлы cookies для улучшения качества обслуживания. Продолжая использовать наш сайт, Вы соглашаетесь с использованием данных технологий и принимаете 
+						a(href="/") Политику конфиденциальности.
+					button.btn__border(data-click-alert-close="coockie") Принять
+			//-END COOCKIE ALERT
+
+			//-ALERT NEXT
+			.alert__next__wrapper(data-alert="next")
+				.container
+					.alert__next
+						.alert__next__top
+							.alert__next__icon
+								img(src="img/alert__next__icon.png" alt="")
+							.alert__next__content
+								.alert__next__message Появился новый материал, который также поглощает запахи! Специально для аллергиков!
+								.alert__next__btnblock
+									a(href="").btn__border Смотреть
+									.alert__next__close(data-click-alert-close="next") Нет, спасибо!
+						.alert__next__bottom
+							.alert__next__btnblock.mobile
+								a(href="").btn__border Смотреть
+								.alert__next__close(data-click-alert-close="next") Нет, спасибо!
+			//-END ALERT NEXT
+
+			//-ALERT PIC
+			.alert__pic__wrapper(data-alert="pic")
+				.container
+					.alert__pic
+						.alert__pic__top
+							.alert__pic__img
+							.alert__pic__content
+								.alert__pic__message Появился новый материал, который также поглощает запахи! Специально для аллергиков!
+								.alert__pic__btnblock
+									a(href="").btn__border Смотреть
+									.alert__pic__close(data-click-alert-close="pic") Нет, спасибо!
+						.alert__pic__bottom
+							.alert__pic__btnblock.mobile
+								a(href="").btn__border Смотреть
+								.alert__pic__close(data-click-alert-close="pic") Нет, спасибо!
+			//-END ALERT PIC
+
+			//-POPUP FORM SUCCESS
+			.popup__form__wrapper(data-alert="popup-form-success")
+				.popup__form
+					img.popup__form__img(data-show="desktop" src="img/popup__form.svg", alt="")
+					img.popup__form__img(data-show="mobile" src="img/popup__form__mobile.svg", alt="")
+					.popup__form__close(data-click-alert-close="popup-form-success")
+						img(src="img/popup__form__close.svg", alt="")
+					.popup__form__title Запрос отправлен!
+					.popup__form__desc Совсем скоро Вам поступит уведомление на электронную почту
+					button.btn(data-click-alert-close="popup-form-success") Отлично!
+			//-END POPUP FORM SUCCESS
+
+			//-POPUP FORM ERROR
+			.popup__form__wrapper(data-alert="popup-form-error")
+				.popup__form
+					img.popup__form__img(data-show="desktop" src="img/popup__form__error.svg", alt="")
+					img.popup__form__img(data-show="mobile" src="img/popup__form__error__mobile.svg", alt="")
+					.popup__form__close(data-click-alert-close="popup-form-error")
+						img(src="img/popup__form__close.svg", alt="")
+					.popup__form__title Что-то пошло не так
+					.popup__form__desc Заявка не отправлена. Попробуйте еще раз.
+					button.btn(data-click-alert-close="popup-form-error") Вернуться к форме
+					.popup__form__alert * Возникли неполадки соединения с интернетом
+
+			//-END POPUP FORM ERROR
 			
 
 			
@@ -180,5 +250,7 @@ html(lang="ru")
 			//-script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")
 			script(src="js/owl.carousel.min.js")
 			script(src="js/jquery.lazy.min.js")
+			script(src="js/mask.js")
+			script(src="js/validate.js")
 			script(src="js/main.js?v11")
 			//script(src="https://api-maps.yandex.ru/2.1/?apikey=<fed58e3e-122a-4b9a-9b1c-60d19ebb0a39>&lang=ru_RU")

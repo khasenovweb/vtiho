@@ -461,7 +461,7 @@
       <div class="calc">
         <div class="container">
           <div class="section__title">Расчитайте стоимость звукоизоляции под ключ</div>
-          <div class="calc__form">
+          <form data-validate-calc="data-validate-calc" action="" method="post" class="calc__form">
             <div class="calc__form__img"><img data-src="img/calc__form__bg.png" alt=""/></div>
             <label for="">Вид дома
               <select name="type__build" id="">
@@ -501,15 +501,18 @@
                 <option value="0.03">Я сам люблю пошуметь и не хочу проблем с соседями</option>
               </select>
             </label>
-            <label for="">Общая площадь квартиры
-              <input name="s" type="number" placeholder="100 кв.м." value="0"/>
-            </label>
+            <div class="calc__form__label__wrapper">
+              <label for="">Общая площадь квартиры</label>
+              <div class="calc__form__input__wrapper">
+                <input name="s" type="number" placeholder="100 кв.м." value="0"/>
+              </div>
+            </div>
             <input type="hidden" name="k" value="42000"/>
             <div class="calc__form__price__title">Предварительная стоимость:</div>
             <div data-calc-result="data-calc-result" class="calc__form__price">0 Р</div>
             <div class="calc__form__checkbox__wrapper">
               <label for="1"> 
-                <input type="checkbox" id="1"/>
+                <input type="checkbox" id="1" name="montazh" data-percent="20" data-change-alert="next"/>
                 <div class="calc__form__box"></div><span>Хочу сэкономить, монтаж буду делать сам</span>
               </label>
               <label for="2"> 
@@ -521,11 +524,15 @@
                 <div class="calc__form__box"></div><span>Требуется выезд замерщика</span>
               </label>
             </div>
+            <div class="calc__form__price__title">Укажите Ваш телефон:</div>
+            <div class="calc__form__input__wrapper phone">
+              <input type="text" data-mask="phone" name="phone" placeholder="+7 (___) ___-____" value=""/>
+            </div>
             <div class="btn__wrapper">
               <button class="btn">Получить консультацию</button>
             </div>
             <div class="calc__form__alert">* Мы не рассылаем спам и номер никому не передаем</div>
-          </div>
+          </form>
         </div>
       </div>
       <div class="comand"> 
@@ -704,6 +711,70 @@
             <button class="btn">Получить консультацию</button>
             <div class="modal__form__alert">* Мы не рассылаем спам и номер никому не передаем</div>
           </form>
+        </div>
+      </div>
+      <div data-alert="coockie" class="coockie__alert">
+        <div class="container">
+          <div data-click-alert-close="coockie" class="coockie__alert__close"></div>
+          <div class="coockie__alert__message">Этот сайт использует файлы cookies для улучшения качества обслуживания. Продолжая использовать наш сайт, Вы соглашаетесь с использованием данных технологий и принимаете <a href="/">Политику конфиденциальности.</a></div>
+          <button data-click-alert-close="coockie" class="btn__border">Принять</button>
+        </div>
+      </div>
+      <div data-alert="next" class="alert__next__wrapper">
+        <div class="container">
+          <div class="alert__next">
+            <div class="alert__next__top">
+              <div class="alert__next__icon"><img src="img/alert__next__icon.png" alt=""/></div>
+              <div class="alert__next__content">
+                <div class="alert__next__message">Появился новый материал, который также поглощает запахи! Специально для аллергиков!</div>
+                <div class="alert__next__btnblock"><a href="" class="btn__border">Смотреть</a>
+                  <div data-click-alert-close="next" class="alert__next__close">Нет, спасибо!</div>
+                </div>
+              </div>
+            </div>
+            <div class="alert__next__bottom">
+              <div class="alert__next__btnblock mobile"><a href="" class="btn__border">Смотреть</a>
+                <div data-click-alert-close="next" class="alert__next__close">Нет, спасибо!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-alert="pic" class="alert__pic__wrapper">
+        <div class="container">
+          <div class="alert__pic">
+            <div class="alert__pic__top">
+              <div class="alert__pic__img"></div>
+              <div class="alert__pic__content">
+                <div class="alert__pic__message">Появился новый материал, который также поглощает запахи! Специально для аллергиков!</div>
+                <div class="alert__pic__btnblock"><a href="" class="btn__border">Смотреть</a>
+                  <div data-click-alert-close="pic" class="alert__pic__close">Нет, спасибо!</div>
+                </div>
+              </div>
+            </div>
+            <div class="alert__pic__bottom">
+              <div class="alert__pic__btnblock mobile"><a href="" class="btn__border">Смотреть</a>
+                <div data-click-alert-close="pic" class="alert__pic__close">Нет, спасибо!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-alert="popup-form-success" data-timeout-hide="4000" class="popup__form__wrapper">
+        <div class="popup__form"><img data-show="desktop" src="img/popup__form.svg" alt="" class="popup__form__img"/><img data-show="mobile" src="img/popup__form__mobile.svg" alt="" class="popup__form__img"/>
+          <div data-click-alert-close="popup-form-success" class="popup__form__close"><img src="img/popup__form__close.svg" alt=""/></div>
+          <div class="popup__form__title">Запрос отправлен!</div>
+          <div class="popup__form__desc">Совсем скоро Вам поступит уведомление на электронную почту</div>
+          <button data-click-alert-close="popup-form-success" class="btn">Отлично!</button>
+        </div>
+      </div>
+      <div data-alert="popup-form-error" data-timeout-hide="2000" class="popup__form__wrapper">
+        <div class="popup__form"><img data-show="desktop" src="img/popup__form__error.svg" alt="" class="popup__form__img"/><img data-show="mobile" src="img/popup__form__error__mobile.svg" alt="" class="popup__form__img"/>
+          <div data-click-alert-close="popup-form-error" class="popup__form__close"><img src="img/popup__form__close.svg" alt=""/></div>
+          <div class="popup__form__title">Что-то пошло не так</div>
+          <div class="popup__form__desc">Заявка не отправлена. Попробуйте еще раз.</div>
+          <button data-click-alert-close="popup-form-error" class="btn">Вернуться к форме</button>
+          <div class="popup__form__alert">* Возникли неполадки соединения с интернетом</div>
         </div>
       </div>
       <script src="js/jquery-3.4.1.min.js"></script>
