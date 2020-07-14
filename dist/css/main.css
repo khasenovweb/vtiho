@@ -1,59 +1,3 @@
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: italic;
-  font-weight: 300;
-  font-display: swap;
-  src: local('Ubuntu Light Italic'), local('Ubuntu-LightItalic'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCp6KVjbNBYlgoKejZftVyLN4Q.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Ubuntu Italic'), local('Ubuntu-Italic'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCu6KVjbNBYlgoKej7wl0w.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: italic;
-  font-weight: 500;
-  font-display: swap;
-  src: local('Ubuntu Medium Italic'), local('Ubuntu-MediumItalic'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCp6KVjbNBYlgoKejYHtFyLN4Q.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: local('Ubuntu Bold Italic'), local('Ubuntu-BoldItalic'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCp6KVjbNBYlgoKejZPslyLN4Q.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: local('Ubuntu Light'), local('Ubuntu-Light'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoC1CzjtGyI.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKew7z.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCjC3jtGyI.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCxCvjtGyI.ttf) format('truetype');
-}
 * {
   margin: 0;
   padding: 0;
@@ -134,7 +78,6 @@ html {
 }
 .hero.page__hero {
   padding-bottom: 40px;
-  background: -webkit-linear-gradient(270.24deg, #acbecb -250.41%, #97b0c1 -89.71%, #5e7f9c 95.81%);
   background: linear-gradient(179.76deg, #acbecb -250.41%, #97b0c1 -89.71%, #5e7f9c 95.81%);
 }
 .hero__logo__desc {
@@ -308,7 +251,6 @@ html {
   margin-top: 13px;
 }
 .btn {
-  background: -webkit-linear-gradient(271.96deg, #f6c37e -32.4%, #d48e04 32.04%, #bd6b2a 94.13%);
   background: linear-gradient(178.04deg, #f6c37e -32.4%, #d48e04 32.04%, #bd6b2a 94.13%);
   border: none;
   border-radius: 100px;
@@ -606,7 +548,6 @@ input {
   border-radius: 20px;
 }
 .section-5__tab__wrapper__active {
-  background: -webkit-linear-gradient(271.96deg, #f6c37e -32.4%, #d48e04 32.04%, #bd6b2a 94.13%);
   background: linear-gradient(178.04deg, #f6c37e -32.4%, #d48e04 32.04%, #bd6b2a 94.13%);
 }
 .section-5__tab {
@@ -1915,7 +1856,6 @@ label.error {
   margin-top: 30px;
 }
 .article__btnblock {
-  background-image: -webkit-linear-gradient(202deg, #215588, #194168);
   background-image: linear-gradient(248deg, #215588, #194168);
   padding: 30px 80px;
   display: -webkit-box;
@@ -2281,6 +2221,136 @@ td {
   font-weight: 300;
   text-decoration: underline;
   margin-top: 50px;
+}
+.thanks__content {
+  background-color: white;
+  margin-top: 63px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 118px;
+  background-image: url(../img/404__bg.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+.thanks__title {
+  margin-top: 70px;
+  font-size: 38px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: center;
+  color: #5e7f9c;
+}
+.thanks__desc {
+  font-size: 17px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4c4c4c;
+  margin-top: 40px;
+}
+.thanks__request {
+  padding: 20px 0;
+  border-top: 2px solid #f2cb9c;
+  border-bottom: 2px solid #f2cb9c;
+  margin-top: 27px;
+  width: 580px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+  color: #4c4c4c;
+}
+.thanks__request span {
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+  color: #4c4c4c;
+}
+.thanks__alert__icon {
+  width: 30px;
+  min-width: 30px;
+  height: 40px;
+  background-image: url(../img/section-3__alert__icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 15px;
+  margin-top: -10px;
+}
+.thanks__alert {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 353px;
+  margin-top: 40px;
+}
+.thanks__alert__text {
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: #4c4c4c;
+}
+.thanks__videoblock {
+  width: 262px;
+  height: 146px;
+  margin-top: 48px;
+}
+.thanks__videoblock__link {
+  font-size: 17px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+  text-align: center;
+  color: #d27c37;
+  margin-top: 23px;
+  text-decoration: underline;
+}
+.thanks__social {
+  margin-top: 46px;
+}
+.thanks__social__item {
+  margin: 0 11px;
+}
+.thanks__videoblock {
+  position: relative;
+}
+.thanks__videoblock__youtube {
+  width: 108px;
+  height: 38px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: #fff;
+  box-shadow: 1px 2px 7px 0 rgba(0, 0, 0, 0.19);
+  background-image: url(../img/thanks__videoblock__youtube.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
 }
 .coockie__alert {
   background-color: #4c4c4c;
