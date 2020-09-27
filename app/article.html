@@ -1,332 +1,564 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width"/>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Vtishine 2</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
-    <link rel="stylesheet" href="css/main.css?v11"/>
-    <link rel="stylesheet" href="css/media.css?v11"/>
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/main.css?v11" />
+    <link rel="stylesheet" href="css/media.css?v11" />
+</head>
+
+<body>
     <div class="global__wapper">
-      <div class="mobile__head"><a href="" class="mobile__head__logo"></a>
-        <div class="mobile__head__sity">Челябинск</div><a href="tel:89514518479" class="mobile__head__phone"></a>
-        <div class="mobile__head__hamburger"></div>
-      </div>
-      <div class="mobile__select__city"><a href="">Москва</a><a href="">Укатеринбург</a></div>
-      <div class="head">
-        <div class="container">
-          <ul class="head__nav">
-            <li><a href="">Решения</a></li>
-            <li><a href="">Кейсы</a></li>
-            <li><a href="">Статьи</a></li>
-            <li><a href="">Звукоизоляционные материалы</a></li>
-          </ul>
-          <div class="head__location"><img data-src="img/head__location.svg" alt=""/>
-            <div class="head__location__title">Университетская набережная, 88</div>
-          </div>
+        <div class="mobile__head"><a href="" class="mobile__head__logo"></a>
+            <div class="mobile__head__sity">Челябинск</div><a href="tel:89514518479" class="mobile__head__phone"></a>
+            <!--==============mobile__cart====================-->
+            <div data-modal-link="cart" class="mobile__cart"><img src="img/cart-mobile.svg" alt="" /></div>
+            <!--==============mobile__cart====================-->
+            <div class="mobile__head__hamburger"></div>
         </div>
-      </div>
-      <div class="hero page__hero">
-        <div class="container">
-          <div class="hero__top"><a href="/" class="hero__logo"><img data-src="img/hero__logo.png" alt=""/></a>
-            <div class="hero__logo__desc page__hero__logo__desc">Продажа материалов. Подбор решения.<br/><span>Звукоизоляция под ключ.</span></div>
-            <div class="hero__phone"><a href="tel: +7 (351) 750 39 51">+7 (351) 750 39 51</a>
-              <button data-modal-link="data-modal-link" data-modal="1" class="btn__border">Заказать звонок</button>
-            </div>
-            <div class="hero__city">
-              <div data-click="select_city" class="hero__city__select">Челябинск
-                <div class="hero__city__select__arrow"> </div>
-                <div class="hero__city__select__submenu"><a href="">Москва	</a><a href="">Екатеринбург	</a></div>
-              </div>
-              <div class="hero__city__working">
-                <div class="hero__city__working__clock"></div>
-                <div class="hero__city__working__title">с 10 до 19:00 (пн-пт);<br/><span>до 16:00 (сб)</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="article">
-        <div class="container">
-          <div class="page__head">
-            <div class="page__title">Каталог материалов</div>
-          </div><a href="" class="article__nav__all article__nav__all__mobile"><img src="img/article__nav__all.svg" alt=""/>
-            <div class="article__nav__all__title">Все статьи портала</div></a>
-          <div class="article__content">
-            <!--new elements-->
-            <ul class="article__nav">
-              <li><a href="/">Что это за услуга?</a></li>
-              <li><a href="/">От чего зависит цена</a></li>
-              <li><a href="/">Виды услуги и сколько они стоят</a></li>
-              <li><a href="/">Примеры цен на услугу, ее виды и особенности</a></li>
-              <li><a href="/">Как, где и у кого заказать услугу?</a></li>
-            </ul>
-            <div class="article__btnblock">
-              <div class="article__btnblock__text">Обратитесь за консультацией о звукоизоляции стен и полов в квартире!</div>
-              <button class="btn">Проконсультироваться</button>
-            </div>
-            <div class="scroll__alert">
-              <svg style="width:22px;fill:#bebebe;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="t772__scroll-icon"> 
-                <path d="M97.2 298.2S56.1 225 38.8 193.3c-23-42.2-26.8-60-10.9-68.8 9.9-5.5 23.6-3.2 32 11.4l19.6 31.2V44.8s-1.2-32.3 21.8-32.3c24.5 0 22.4 32.3 22.4 32.3v59.4s12.9-9.3 28-5.1c7.7 2.1 16.7 5.8 21.5 18 0 0 30.7-14.9 46 16.8 0 0 35.4-7 35.4 29.7s-44.2 134.6-44.2 134.6H97.2zM249.9.5l-10.6 10.6 24.1 23.8H158.5v15h105l-24.2 23.9 10.6 10.6 42.5-42z" class="st0"></path>
-              </svg>
-            </div>
-            <div class="table__wrapper">
-              <table>
-                <thead>
-                  <td>Материалы</td>
-                  <td>Количество, шт.</td>
-                  <td>Стоимость, руб.</td>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Профиль ПП 60/27</td>
-                    <td>27</td>
-                    <td>3429</td>
-                  </tr>
-                  <tr>
-                    <td>Соединитель для профилей</td>
-                    <td>58</td>
-                    <td>290</td>
-                  </tr>
-                  <tr>
-                    <td>Виброизолирующие крепежи</td>
-                    <td>75</td>
-                    <td>26925</td>
-                  </tr>
-                  <tr>
-                    <td>Звукопоглощающий материал 55 мм</td>
-                    <td>21</td>
-                    <td>15708</td>
-                  </tr>
-                  <tr>
-                    <td>Гипсоволокнистый лист 10 мм</td>
-                    <td>10</td>
-                    <td>4400</td>
-                  </tr>
-                  <tr>
-                    <td>Гипсокартон влагостойкий 12,5 мм</td>
-                    <td>10</td>
-                    <td>3130</td>
-                  </tr>
-                  <tr>
-                    <td>Герметик 0,4 кг</td>
-                    <td>10</td>
-                    <td>3000</td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <td colspan="2">Итого:</td>
-                  <td>56882</td>
-                </tfoot>
-              </table>
-            </div>
-            <!--Картинка с обтеканием-->
-            <div class="article__img"><img src="img/article__head.jpg" alt=""/>
-              <div class="article__head__title">Фото новостроек с проблемами звукоизоляции</div>
-            </div>
-            <p>Юридически звукоизоляция квартиры в панельном доме не относится к её недостаткам, что избавляет продавца от необходимости уведомления покупателя об этом. </p><strong>Юридически звукоизоляция квартиры в панельном доме</strong>
-            <div class="article__img__full"><img src="img/article__head.jpg" alt=""/>
-              <div class="article__head__title">Фото новостроек с проблемами звукоизоляции</div>
-            </div>
-            <p>Юридически звукоизоляция квартиры в панельном доме не относится к её недостаткам, что избавляет продавца от необходимости уведомления покупателя об этом. </p>
-            <!--END Картинка с обтеканием-->
-            <!--END new elements	-->
-            <div class="article__head">
-              <div style="background-image: url(../img/article__head.jpg);" class="article__head__img"></div>
-              <div class="article__head__title">Фото новостроек с проблемами звукоизоляции</div>
-            </div>
-            <div class="article__img__block"><img src="img/article__head.jpg" alt=""/>
-              <div class="article__head__title">Фото новостроек с проблемами звукоизоляции</div>
-            </div>
-            <p class="p__bg">Большинство жильцов квартир не понаслышке знают про звукоизоляцию квартир. И дело здесь кроется зачастую в низком её качестве, а то и в полном отсутствии. Это касается как новостроек, так и квартир на вторичном рынке.</p>
-            <p>Юридически звукоизоляция квартиры в панельном доме не относится к её недостаткам, что избавляет продавца от необходимости уведомления покупателя об этом. По всему выходит, что разнообразные шумы, спокойно проходящие сквозь стены, пол и потолок, являются личной проблемой жильцов.</p><img data-device="desctop" src="img/article__img.jpg" alt=""/><img data-device="mobile" src="img/article__img__mobile.jpg" alt=""/>
-            <p>Уровень шумо и звукопоглощения во многом зависит от конструктивных особенностей дома — и если только предстоит выбирать будущее жилье, рекомендуется внимательно ознакомиться с материалом.</p><strong>Советы при выборе квартиры</strong>
-            <p>Большинство жильцов квартир не понаслышке знают про звукоизоляцию квартир. И дело здесь кроется зачастую в низком её качестве, а то и в полном отсутствии. Это касается как новостроек, так и квартир на вторичном рынке. Поэтомы мы рекомендуем:</p>
-            <ul> 
-              <li>Осматривать состояние труб.</li>
-              <li>Выбрать надежного застройщика.</li>
-              <li>Навести справки о районе.</li>
-            </ul>
-            <div class="article__expert">
-              <div class="article__expert__title">Мнение эксперта</div>
-              <blockquote> <span class="article__expert__quotes">« </span><span>Влажность в ванной диктует обязательной наличие качественной вентиляции во избежание быстрого разрастания грибковой плесени. Поэтому приступая к устройству звукоизоляции стен, необходимо обратить внимание на то, чтобы вентиляционные каналы оставались открытыми. В процессе вентиляции участвует, также, щель между полом и дверью или же специальное окошко в дверном полотне, поэтому закрывать их, добиваясь стопроцентной шумоизоляции, ни в коем случае нельзя.</span><span class="article__expert__quotes"> » </span></blockquote>
-              <div class="article__expert__footer">
-                <div class="article__expert__footer__text">
-                  <div class="article__expert__footer__name">Александр Некрасов</div>
-                  <div class="article__expert__footer__role">Технический директор ООО «В ТИШИНЕ»</div>
+        <div class="mobile__select__city"><a href="">Москва</a><a href="">Укатеринбург</a></div>
+        <div class="head">
+            <div class="container">
+                <ul class="head__nav">
+                    <li><a href="">Решения</a></li>
+                    <li><a href="">Кейсы</a></li>
+                    <li><a href="">Статьи</a></li>
+                    <li><a href="">Звукоизоляционные материалы</a></li>
+                </ul>
+                <div class="head__location"><img data-src="img/head__location.svg" alt="" />
+                    <div class="head__location__title">Университетская набережная, 88</div>
                 </div>
-                <button class="btn">Спросить эксперта</button>
-              </div>
             </div>
-            <div class="article__imgul">
-              <div class="article__img__block"><img src="img/article__head.jpg" alt=""/>
-                <div class="article__head__title">Фото новостроек с проблемами звукоизоляции</div>
-              </div>
-              <ul>
-                <li>—  теплопроводность (λ) в сухом состоянии — 0,0333 (Вт/м.К);</li>
-                <li>—  теплопроводность (λА) для условий эксплуатации «А» — 0,034 (Вт/м.К);</li>
-                <li>—  сопротивление паропроницанию (μ) — 0,087 (м2.ч.Па/мг);</li>
-                <li>—  влажность — 0,47 (% масс);</li>
-                <li>—  сорбционная влажность — 1,2 (% масс);</li>
-                <li>—  водопоглощение при частичном погружении — 49,5 (% объёма);</li>
-              </ul>
-            </div>
-            <p>Большинство жильцов квартир не понаслышке знают про звукоизоляцию квартир. И дело здесь кроется зачастую в низком её качестве, а то и в полном отсутствии. Это касается как новостроек, так и квартир на вторичном рынке.</p>
-            <p>Юридически звукоизоляция квартиры в панельном доме не относится к её недостаткам, что избавляет продавца от необходимости уведомления покупателя об этом. По всему выходит, что разнообразные шумы, спокойно проходящие сквозь стены, пол и потолок, являются личной проблемой жильцов.</p><img data-device="desctop" src="img/article__separator.svg" alt="" class="article__separator"/><img data-device="mobile" src="img/article__separator__mobile.svg" alt="" class="article__separator"/>
-            <p>Юридически звукоизоляция квартиры в панельном доме не относится к её недостаткам, что избавляет продавца от необходимости уведомления покупателя об этом. По всему выходит, что разнообразные шумы, спокойно проходящие сквозь стены, пол и потолок, являются личной проблемой жильцов.</p>
-            <div class="alert"> 
-              <div class="alert__icon"></div>
-              <div class="alert__text">Если правильно подобрать «пирог» из современных материалов,  эффективность звукоизоляции возрастает от 45 до 90%.<br/><span>Обычно достаточно снизить громкость звуков в 2-3 раза, чтобы Вы перестали их замечать. </span></div>
-            </div>
-            <div class="article__nav"><a href="" class="article__nav__all"><img src="img/article__nav__all.svg" alt=""/>
-                <div class="article__nav__all__title">Все статьи портала</div></a><a class="article__nav__next">Технология будущего в звукоизоляции</a></div>
-          </div>
         </div>
-      </div>
-      <footer>
-        <div class="container"><a href="" class="footer__logo"><img data-src="img/footer__logo.png" alt=""/></a>
-          <div class="footer__navs">
-            <ul class="footer__navs__citys">
-              <li> <a href="">Москва</a></li>
-              <li> <a href="">Екатеринбург</a></li>
-              <li> <a href="">Челябинск</a></li>
-            </ul>
-            <ul class="footer__navs__menu">
-              <li> <a href="">Статьи</a></li>
-              <li> <a href="">Магазин</a></li>
-              <li> <a href="">Способы оплаты</a></li>
-              <li> <a href="">Реквизиты</a></li>
-            </ul>
-          </div>
-          <div class="footer__contacts"><a href="tel:+7 (351) 750 39 51" class="footer__phone">+7 (351) 750 39 51</a>
-            <div class="footer__social"><a href=""><img data-src="img/footer__fb.svg" alt=""/></a><a href=""><img data-src="img/footer__vk.svg" alt=""/></a><a href=""><img data-src="img/footer__inst.svg" alt=""/></a><a href=""><img data-src="img/footer__youtube.svg" alt=""/></a></div>
-          </div>
-        </div>
-      </footer>
-      <div class="copyright">
-        <div class="container">
-          <div class="copyright__text">© Все права защищены.</div>
-        </div>
-      </div>
-      <div class="mobile__nav">
-        <ul class="mobile__nav__links">
-          <li><a href="">Решения</a></li>
-          <li><a href="">Кейсы</a></li>
-          <li><a href="">Статьи</a></li>
-          <li><a href="">Звукоизоляционные материалы</a></li>
-        </ul>
-        <button data-modal-link="data-modal-link" data-modal="1" class="btn__border">Заказать звонок</button>
-        <div class="mobile__nav__contacts">
-          <div class="mobile__nav__contacts__title">Мы находимся по адресу</div>
-          <div class="mobile__nav__contacts__adress">
-            <div class="mobile__nav__contacts__adress__icon"><img data-src="img/head__location.svg" alt=""/></div>
-            <div class="mobile__nav__contacts__adress__text">Университетская <br/><span>набережная, 88</span></div>
-          </div>
-          <div class="mobile__nav__contacts__worktime">
-            <div class="mobile__nav__contacts__worktime__icon"><img data-src="img/mobile__nav__clock.svg" alt=""/></div>
-            <div class="mobile__nav__contacts__worktime__text">с 10 до 19:00 (пн-пт);<br/><span>до 16:00 (сб)</span></div>
-          </div>
-        </div>
-      </div>
-      <div data-modal="1" class="modal__wrapper">
-        <div class="modal">
-          <div class="modal__close"></div>
-          <div class="modal__title">Заказать звонок</div>
-          <form action="">
-            <input type="text" placeholder="Ваше имя" class="input__border"/>
-            <input type="text" placeholder="Телефон" class="input__border"/>
-            <button class="btn">Получить консультацию</button>
-            <div class="modal__form__alert">* Мы не рассылаем спам и номер никому не передаем</div>
-          </form>
-        </div>
-      </div>
-      
-      <div data-modal="2" class="modal__wrapper">
-        <div class="modal">
-          <div class="modal__close"></div>
-          <div class="modal__title">Расчет решения</div>
-          <form action="">
-            <input type="text" placeholder="Ваше имя" class="input__border"/>
-            <input type="text" placeholder="Телефон" class="input__border"/>
-            <button class="btn">Получить консультацию</button>
-            <div class="modal__form__alert">* Мы не рассылаем спам и номер никому не передаем</div>
-          </form>
-        </div>
-      </div>
-      <div data-alert="coockie" class="coockie__alert">
-        <div class="container">
-          <div data-click-alert-close="coockie" class="coockie__alert__close"></div>
-          <div class="coockie__alert__message">Этот сайт использует файлы cookies для улучшения качества обслуживания. Продолжая использовать наш сайт, Вы соглашаетесь с использованием данных технологий и принимаете <a href="/">Политику конфиденциальности.</a></div>
-          <button data-click-alert-close="coockie" class="btn__border">Принять</button>
-        </div>
-      </div>
-      <div data-alert="next" class="alert__next__wrapper">
-        <div class="container">
-          <div class="alert__next">
-            <div class="alert__next__top">
-              <div class="alert__next__icon"><img src="img/alert__next__icon.png" alt=""/></div>
-              <div class="alert__next__content">
-                <div class="alert__next__message">Появился новый материал, который также поглощает запахи! Специально для аллергиков!</div>
-                <div class="alert__next__btnblock"><a href="" class="btn__border">Смотреть</a>
-                  <div data-click-alert-close="next" class="alert__next__close">Нет, спасибо!</div>
+        <div class="hero page__hero">
+            <div class="container">
+                <div class="hero__top"><a href="/" class="hero__logo"><img data-src="img/hero__logo.png" alt="" /></a>
+                    <div class="hero__logo__desc page__hero__logo__desc">Продажа материалов. Подбор решения.<br /><span>Звукоизоляция под ключ.</span></div>
+                    <div class="hero__phone"><a href="tel: +7 (351) 750 39 51">+7 (351) 750 39 51</a>
+                        <button data-modal-link="data-modal-link" data-modal="1" class="btn__border">Заказать звонок</button>
+                    </div>
+                    <div class="hero__city">
+                        <div data-click="select_city" class="hero__city__select">Челябинск <div class="hero__city__select__arrow"> </div>
+                            <div class="hero__city__select__submenu"><a href="">Москва </a><a href="">Екатеринбург </a></div>
+                        </div>
+                        <div class="hero__city__working">
+                            <div class="hero__city__working__clock"></div>
+                            <div class="hero__city__working__title">с 10 до 19:00 (пн-пт);<br /><span>до 16:00 (сб)</span></div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="alert__next__bottom">
-              <div class="alert__next__btnblock mobile"><a href="" class="btn__border">Смотреть</a>
-                <div data-click-alert-close="next" class="alert__next__close">Нет, спасибо!</div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div data-alert="pic" class="alert__pic__wrapper">
-        <div class="container">
-          <div class="alert__pic">
-            <div class="alert__pic__top">
-              <div class="alert__pic__img"></div>
-              <div class="alert__pic__content">
-                <div class="alert__pic__message">Появился новый материал, который также поглощает запахи! Специально для аллергиков!</div>
-                <div class="alert__pic__btnblock"><a href="" class="btn__border">Смотреть</a>
-                  <div data-click-alert-close="pic" class="alert__pic__close">Нет, спасибо!</div>
+        <div class="article">
+            <div class="container">
+                <div class="page__head">
+                    <div class="page__title">Каталог материалов</div>
+                </div><a href="" class="article__nav__all article__nav__all__mobile"><img src="img/article__nav__all.svg" alt="" />
+                    <div class="article__nav__all__title">Все статьи портала</div>
+                </a>
+                <div class="article__content">
+                    <!--new elements-->
+                    <ul class="article__nav">
+                        <li><a href="/">Что это за услуга?</a></li>
+                        <li><a href="/">От чего зависит цена</a></li>
+                        <li><a href="/">Виды услуги и сколько они стоят</a></li>
+                        <li><a href="/">Примеры цен на услугу, ее виды и особенности</a></li>
+                        <li><a href="/">Как, где и у кого заказать услугу?</a></li>
+                    </ul>
+                    <div class="article__btnblock">
+                        <div class="article__btnblock__text">Обратитесь за консультацией о звукоизоляции стен и полов в квартире!</div>
+                        <button class="btn">Проконсультироваться</button>
+                    </div>
+                    <div class="scroll__alert">
+                        <svg style="width:22px;fill:#bebebe;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="t772__scroll-icon">
+                            <path d="M97.2 298.2S56.1 225 38.8 193.3c-23-42.2-26.8-60-10.9-68.8 9.9-5.5 23.6-3.2 32 11.4l19.6 31.2V44.8s-1.2-32.3 21.8-32.3c24.5 0 22.4 32.3 22.4 32.3v59.4s12.9-9.3 28-5.1c7.7 2.1 16.7 5.8 21.5 18 0 0 30.7-14.9 46 16.8 0 0 35.4-7 35.4 29.7s-44.2 134.6-44.2 134.6H97.2zM249.9.5l-10.6 10.6 24.1 23.8H158.5v15h105l-24.2 23.9 10.6 10.6 42.5-42z" class="st0"></path>
+                        </svg>
+                    </div>
+                    <div class="table__wrapper">
+                        <table>
+                            <thead>
+                                <td>Материалы</td>
+                                <td>Количество, шт.</td>
+                                <td>Стоимость, руб.</td>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Профиль ПП 60/27</td>
+                                    <td>27</td>
+                                    <td>3429</td>
+                                </tr>
+                                <tr>
+                                    <td>Соединитель для профилей</td>
+                                    <td>58</td>
+                                    <td>290</td>
+                                </tr>
+                                <tr>
+                                    <td>Виброизолирующие крепежи</td>
+                                    <td>75</td>
+                                    <td>26925</td>
+                                </tr>
+                                <tr>
+                                    <td>Звукопоглощающий материал 55 мм</td>
+                                    <td>21</td>
+                                    <td>15708</td>
+                                </tr>
+                                <tr>
+                                    <td>Гипсоволокнистый лист 10 мм</td>
+                                    <td>10</td>
+                                    <td>4400</td>
+                                </tr>
+                                <tr>
+                                    <td>Гипсокартон влагостойкий 12,5 мм</td>
+                                    <td>10</td>
+                                    <td>3130</td>
+                                </tr>
+                                <tr>
+                                    <td>Герметик 0,4 кг</td>
+                                    <td>10</td>
+                                    <td>3000</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <td colspan="2">Итого:</td>
+                                <td>56882</td>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!--Картинка с обтеканием-->
+                    <div class="article__img"><img src="img/article__head.jpg" alt="" />
+                        <div class="article__head__title">Фото новостроек с проблемами звукоизоляции</div>
+                    </div>
+                    <p>Юридически звукоизоляция квартиры в панельном доме не относится к её недостаткам, что избавляет продавца от необходимости уведомления покупателя об этом. </p><strong>Юридически звукоизоляция квартиры в панельном доме</strong>
+                    <div class="article__img__full"><img src="img/article__head.jpg" alt="" />
+                        <div class="article__head__title">Фото новостроек с проблемами звукоизоляции</div>
+                    </div>
+                    <p>Юридически звукоизоляция квартиры в панельном доме не относится к её недостаткам, что избавляет продавца от необходимости уведомления покупателя об этом. </p>
+                    <!--END Картинка с обтеканием-->
+                    <!--END new elements  -->
+                    <div class="article__head">
+                        <div style="background-image: url(../img/article__head.jpg);" class="article__head__img"></div>
+                        <div class="article__head__title">Фото новостроек с проблемами звукоизоляции</div>
+                    </div>
+                    <div class="article__img__block"><img src="img/article__head.jpg" alt="" />
+                        <div class="article__head__title">Фото новостроек с проблемами звукоизоляции</div>
+                    </div>
+                    <p class="p__bg">Большинство жильцов квартир не понаслышке знают про звукоизоляцию квартир. И дело здесь кроется зачастую в низком её качестве, а то и в полном отсутствии. Это касается как новостроек, так и квартир на вторичном рынке.</p>
+                    <p>Юридически звукоизоляция квартиры в панельном доме не относится к её недостаткам, что избавляет продавца от необходимости уведомления покупателя об этом. По всему выходит, что разнообразные шумы, спокойно проходящие сквозь стены, пол и потолок, являются личной проблемой жильцов.</p><img data-device="desctop" src="img/article__img.jpg" alt="" /><img data-device="mobile" src="img/article__img__mobile.jpg" alt="" />
+                    <p>Уровень шумо и звукопоглощения во многом зависит от конструктивных особенностей дома — и если только предстоит выбирать будущее жилье, рекомендуется внимательно ознакомиться с материалом.</p><strong>Советы при выборе квартиры</strong>
+                    <p>Большинство жильцов квартир не понаслышке знают про звукоизоляцию квартир. И дело здесь кроется зачастую в низком её качестве, а то и в полном отсутствии. Это касается как новостроек, так и квартир на вторичном рынке. Поэтомы мы рекомендуем:</p>
+                    <ul>
+                        <li>Осматривать состояние труб.</li>
+                        <li>Выбрать надежного застройщика.</li>
+                        <li>Навести справки о районе.</li>
+                    </ul>
+                    <div class="article__expert">
+                        <div class="article__expert__title">Мнение эксперта</div>
+                        <blockquote> <span class="article__expert__quotes">« </span><span>Влажность в ванной диктует обязательной наличие качественной вентиляции во избежание быстрого разрастания грибковой плесени. Поэтому приступая к устройству звукоизоляции стен, необходимо обратить внимание на то, чтобы вентиляционные каналы оставались открытыми. В процессе вентиляции участвует, также, щель между полом и дверью или же специальное окошко в дверном полотне, поэтому закрывать их, добиваясь стопроцентной шумоизоляции, ни в коем случае нельзя.</span><span class="article__expert__quotes"> » </span></blockquote>
+                        <div class="article__expert__footer">
+                            <div class="article__expert__footer__text">
+                                <div class="article__expert__footer__name">Александр Некрасов</div>
+                                <div class="article__expert__footer__role">Технический директор ООО «В ТИШИНЕ»</div>
+                            </div>
+                            <button class="btn">Спросить эксперта</button>
+                        </div>
+                    </div>
+                    <div class="article__imgul">
+                        <div class="article__img__block"><img src="img/article__head.jpg" alt="" />
+                            <div class="article__head__title">Фото новостроек с проблемами звукоизоляции</div>
+                        </div>
+                        <ul>
+                            <li>— теплопроводность (λ) в сухом состоянии — 0,0333 (Вт/м.К);</li>
+                            <li>— теплопроводность (λА) для условий эксплуатации «А» — 0,034 (Вт/м.К);</li>
+                            <li>— сопротивление паропроницанию (μ) — 0,087 (м2.ч.Па/мг);</li>
+                            <li>— влажность — 0,47 (% масс);</li>
+                            <li>— сорбционная влажность — 1,2 (% масс);</li>
+                            <li>— водопоглощение при частичном погружении — 49,5 (% объёма);</li>
+                        </ul>
+                    </div>
+                    <p>Большинство жильцов квартир не понаслышке знают про звукоизоляцию квартир. И дело здесь кроется зачастую в низком её качестве, а то и в полном отсутствии. Это касается как новостроек, так и квартир на вторичном рынке.</p>
+                    <p>Юридически звукоизоляция квартиры в панельном доме не относится к её недостаткам, что избавляет продавца от необходимости уведомления покупателя об этом. По всему выходит, что разнообразные шумы, спокойно проходящие сквозь стены, пол и потолок, являются личной проблемой жильцов.</p><img data-device="desctop" src="img/article__separator.svg" alt="" class="article__separator" /><img data-device="mobile" src="img/article__separator__mobile.svg" alt="" class="article__separator" />
+                    <p>Юридически звукоизоляция квартиры в панельном доме не относится к её недостаткам, что избавляет продавца от необходимости уведомления покупателя об этом. По всему выходит, что разнообразные шумы, спокойно проходящие сквозь стены, пол и потолок, являются личной проблемой жильцов.</p>
+                    <div class="alert">
+                        <div class="alert__icon"></div>
+                        <div class="alert__text">Если правильно подобрать «пирог» из современных материалов, эффективность звукоизоляции возрастает от 45 до 90%.<br /><span>Обычно достаточно снизить громкость звуков в 2-3 раза, чтобы Вы перестали их замечать. </span></div>
+                    </div>
+                    <div class="article__nav"><a href="" class="article__nav__all"><img src="img/article__nav__all.svg" alt="" />
+                            <div class="article__nav__all__title">Все статьи портала</div>
+                        </a><a class="article__nav__next">Технология будущего в звукоизоляции</a></div>
                 </div>
-              </div>
             </div>
-            <div class="alert__pic__bottom">
-              <div class="alert__pic__btnblock mobile"><a href="" class="btn__border">Смотреть</a>
-                <div data-click-alert-close="pic" class="alert__pic__close">Нет, спасибо!</div>
-              </div>
+        </div>
+        <footer>
+            <div class="container"><a href="" class="footer__logo"><img data-src="img/footer__logo.png" alt="" /></a>
+                <div class="footer__navs">
+                    <ul class="footer__navs__citys">
+                        <li> <a href="">Москва</a></li>
+                        <li> <a href="">Екатеринбург</a></li>
+                        <li> <a href="">Челябинск</a></li>
+                    </ul>
+                    <ul class="footer__navs__menu">
+                        <li> <a href="">Статьи</a></li>
+                        <li> <a href="">Магазин</a></li>
+                        <li> <a href="">Способы оплаты</a></li>
+                        <li> <a href="">Реквизиты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contacts"><a href="tel:+7 (351) 750 39 51" class="footer__phone">+7 (351) 750 39 51</a>
+                    <div class="footer__social"><a href=""><img data-src="img/footer__fb.svg" alt="" /></a><a href=""><img data-src="img/footer__vk.svg" alt="" /></a><a href=""><img data-src="img/footer__inst.svg" alt="" /></a><a href=""><img data-src="img/footer__youtube.svg" alt="" /></a></div>
+                </div>
             </div>
-          </div>
+        </footer>
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright__text">© Все права защищены.</div>
+            </div>
         </div>
-      </div>
-      <div data-alert="popup-form-success" class="popup__form__wrapper">
-        <div class="popup__form"><img data-show="desktop" src="img/popup__form.svg" alt="" class="popup__form__img"/><img data-show="mobile" src="img/popup__form__mobile.svg" alt="" class="popup__form__img"/>
-          <div data-click-alert-close="popup-form-success" class="popup__form__close"><img src="img/popup__form__close.svg" alt=""/></div>
-          <div class="popup__form__title">Запрос отправлен!</div>
-          <div class="popup__form__desc">Совсем скоро Вам поступит уведомление на электронную почту</div>
-          <button data-click-alert-close="popup-form-success" class="btn">Отлично!</button>
+        <div class="mobile__nav">
+            <ul class="mobile__nav__links">
+                <li><a href="">Решения</a></li>
+                <li><a href="">Кейсы</a></li>
+                <li><a href="">Статьи</a></li>
+                <li><a href="">Звукоизоляционные материалы</a></li>
+            </ul>
+            <button data-modal-link="data-modal-link" data-modal="1" class="btn__border">Заказать звонок</button>
+            <div class="mobile__nav__contacts">
+                <div class="mobile__nav__contacts__title">Мы находимся по адресу</div>
+                <div class="mobile__nav__contacts__adress">
+                    <div class="mobile__nav__contacts__adress__icon"><img data-src="img/head__location.svg" alt="" /></div>
+                    <div class="mobile__nav__contacts__adress__text">Университетская <br /><span>набережная, 88</span></div>
+                </div>
+                <div class="mobile__nav__contacts__worktime">
+                    <div class="mobile__nav__contacts__worktime__icon"><img data-src="img/mobile__nav__clock.svg" alt="" /></div>
+                    <div class="mobile__nav__contacts__worktime__text">с 10 до 19:00 (пн-пт);<br /><span>до 16:00 (сб)</span></div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div data-alert="popup-form-error" class="popup__form__wrapper">
-        <div class="popup__form"><img data-show="desktop" src="img/popup__form__error.svg" alt="" class="popup__form__img"/><img data-show="mobile" src="img/popup__form__error__mobile.svg" alt="" class="popup__form__img"/>
-          <div data-click-alert-close="popup-form-error" class="popup__form__close"><img src="img/popup__form__close.svg" alt=""/></div>
-          <div class="popup__form__title">Что-то пошло не так</div>
-          <div class="popup__form__desc">Заявка не отправлена. Попробуйте еще раз.</div>
-          <button data-click-alert-close="popup-form-error" class="btn">Вернуться к форме</button>
-          <div class="popup__form__alert">* Возникли неполадки соединения с интернетом</div>
+        <!--=====================================cart=====================================-->
+        <div data-modal="cart" class="cart__modal__wrapper">
+            <div class="cart__modal">
+                <div data-modal-close="cart" class="modal__close"></div>
+                <div class="cart__modal__title">Корзина</div>
+                <div class="cart__modal__products">
+                    <div class="cart__modal__product">
+                        <div class="cart__modal__product__left">
+                            <div style="background-image: url(../img/product.jpg)" class="cart__modal__product__img"></div>
+                            <div class="cart__modal__product__text">
+                                <div class="cart__modal__product__name">Tecsound [Тексаунд] 70</div>
+                                <div class="cart__modal__product__desc">(10м х 1.5м х 14мм) 15м2</div>
+                            </div>
+                        </div>
+                        <div class="cart__modal__product__right">
+                            <div class="cart__modal__product__count">
+                                <div class="cart__modal__product__count__btn">-</div>
+                                <input type="number" value="1" />
+                                <div class="cart__modal__product__count__btn">+</div>
+                            </div>
+                            <div class="cart__modal__product__price">5 510 Р</div>
+                            <form action="" class="cart__modal__product__delete">
+                                <button><img src="img/trash.png" alt="" /></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cart__modal__product">
+                        <div class="cart__modal__product__left">
+                            <div style="background-image: url(../img/product.jpg)" class="cart__modal__product__img"></div>
+                            <div class="cart__modal__product__text">
+                                <div class="cart__modal__product__name">Tecsound [Тексаунд] 70</div>
+                                <div class="cart__modal__product__desc">(10м х 1.5м х 14мм) 15м2</div>
+                            </div>
+                        </div>
+                        <div class="cart__modal__product__right">
+                            <div class="cart__modal__product__count">
+                                <div class="cart__modal__product__count__btn">-</div>
+                                <input type="number" value="1" />
+                                <div class="cart__modal__product__count__btn">+</div>
+                            </div>
+                            <div class="cart__modal__product__price">5 510 Р</div>
+                            <form action="" class="cart__modal__product__delete">
+                                <button><img src="img/trash.png" alt="" /></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cart__modal__product">
+                        <div class="cart__modal__product__left">
+                            <div style="background-image: url(../img/product.jpg)" class="cart__modal__product__img"></div>
+                            <div class="cart__modal__product__text">
+                                <div class="cart__modal__product__name">Tecsound [Тексаунд] 70</div>
+                                <div class="cart__modal__product__desc">(10м х 1.5м х 14мм) 15м2</div>
+                            </div>
+                        </div>
+                        <div class="cart__modal__product__right">
+                            <div class="cart__modal__product__count">
+                                <div class="cart__modal__product__count__btn">-</div>
+                                <input type="number" value="1" />
+                                <div class="cart__modal__product__count__btn">+</div>
+                            </div>
+                            <div class="cart__modal__product__price">5 510 Р</div>
+                            <form action="" class="cart__modal__product__delete">
+                                <button><img src="img/trash.png" alt="" /></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cart__modal__product">
+                        <div class="cart__modal__product__left">
+                            <div style="background-image: url(../img/product.jpg)" class="cart__modal__product__img"></div>
+                            <div class="cart__modal__product__text">
+                                <div class="cart__modal__product__name">Tecsound [Тексаунд] 70</div>
+                                <div class="cart__modal__product__desc">(10м х 1.5м х 14мм) 15м2</div>
+                            </div>
+                        </div>
+                        <div class="cart__modal__product__right">
+                            <div class="cart__modal__product__count">
+                                <div class="cart__modal__product__count__btn">-</div>
+                                <input type="number" value="1" />
+                                <div class="cart__modal__product__count__btn">+</div>
+                            </div>
+                            <div class="cart__modal__product__price">5 510 Р</div>
+                            <form action="" class="cart__modal__product__delete">
+                                <button><img src="img/trash.png" alt="" /></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cart__modal__product">
+                        <div class="cart__modal__product__left">
+                            <div style="background-image: url(../img/product.jpg)" class="cart__modal__product__img"></div>
+                            <div class="cart__modal__product__text">
+                                <div class="cart__modal__product__name">Tecsound [Тексаунд] 70</div>
+                                <div class="cart__modal__product__desc">(10м х 1.5м х 14мм) 15м2</div>
+                            </div>
+                        </div>
+                        <div class="cart__modal__product__right">
+                            <div class="cart__modal__product__count">
+                                <div class="cart__modal__product__count__btn">-</div>
+                                <input type="number" value="1" />
+                                <div class="cart__modal__product__count__btn">+</div>
+                            </div>
+                            <div class="cart__modal__product__price">5 510 Р</div>
+                            <form action="" class="cart__modal__product__delete">
+                                <button><img src="img/trash.png" alt="" /></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cart__modal__product">
+                        <div class="cart__modal__product__left">
+                            <div style="background-image: url(../img/product.jpg)" class="cart__modal__product__img"></div>
+                            <div class="cart__modal__product__text">
+                                <div class="cart__modal__product__name">Tecsound [Тексаунд] 70</div>
+                                <div class="cart__modal__product__desc">(10м х 1.5м х 14мм) 15м2</div>
+                            </div>
+                        </div>
+                        <div class="cart__modal__product__right">
+                            <div class="cart__modal__product__count">
+                                <div class="cart__modal__product__count__btn">-</div>
+                                <input type="number" value="1" />
+                                <div class="cart__modal__product__count__btn">+</div>
+                            </div>
+                            <div class="cart__modal__product__price">5 510 Р</div>
+                            <form action="" class="cart__modal__product__delete">
+                                <button><img src="img/trash.png" alt="" /></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cart__modal__product">
+                        <div class="cart__modal__product__left">
+                            <div style="background-image: url(../img/product.jpg)" class="cart__modal__product__img"></div>
+                            <div class="cart__modal__product__text">
+                                <div class="cart__modal__product__name">Tecsound [Тексаунд] 70</div>
+                                <div class="cart__modal__product__desc">(10м х 1.5м х 14мм) 15м2</div>
+                            </div>
+                        </div>
+                        <div class="cart__modal__product__right">
+                            <div class="cart__modal__product__count">
+                                <div class="cart__modal__product__count__btn">-</div>
+                                <input type="number" value="1" />
+                                <div class="cart__modal__product__count__btn">+</div>
+                            </div>
+                            <div class="cart__modal__product__price">5 510 Р</div>
+                            <form action="" class="cart__modal__product__delete">
+                                <button><img src="img/trash.png" alt="" /></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cart__modal__product">
+                        <div class="cart__modal__product__left">
+                            <div style="background-image: url(../img/product.jpg)" class="cart__modal__product__img"></div>
+                            <div class="cart__modal__product__text">
+                                <div class="cart__modal__product__name">Tecsound [Тексаунд] 70</div>
+                                <div class="cart__modal__product__desc">(10м х 1.5м х 14мм) 15м2</div>
+                            </div>
+                        </div>
+                        <div class="cart__modal__product__right">
+                            <div class="cart__modal__product__count">
+                                <div class="cart__modal__product__count__btn">-</div>
+                                <input type="number" value="1" />
+                                <div class="cart__modal__product__count__btn">+</div>
+                            </div>
+                            <div class="cart__modal__product__price">5 510 Р</div>
+                            <form action="" class="cart__modal__product__delete">
+                                <button><img src="img/trash.png" alt="" /></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cart__modal__product">
+                        <div class="cart__modal__product__left">
+                            <div style="background-image: url(../img/product.jpg)" class="cart__modal__product__img"></div>
+                            <div class="cart__modal__product__text">
+                                <div class="cart__modal__product__name">Tecsound [Тексаунд] 70</div>
+                                <div class="cart__modal__product__desc">(10м х 1.5м х 14мм) 15м2</div>
+                            </div>
+                        </div>
+                        <div class="cart__modal__product__right">
+                            <div class="cart__modal__product__count">
+                                <div class="cart__modal__product__count__btn">-</div>
+                                <input type="number" value="1" />
+                                <div class="cart__modal__product__count__btn">+</div>
+                            </div>
+                            <div class="cart__modal__product__price">5 510 Р</div>
+                            <form action="" class="cart__modal__product__delete">
+                                <button><img src="img/trash.png" alt="" /></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cart__modal__product">
+                        <div class="cart__modal__product__left">
+                            <div style="background-image: url(../img/product.jpg)" class="cart__modal__product__img"></div>
+                            <div class="cart__modal__product__text">
+                                <div class="cart__modal__product__name">Tecsound [Тексаунд] 70</div>
+                                <div class="cart__modal__product__desc">(10м х 1.5м х 14мм) 15м2</div>
+                            </div>
+                        </div>
+                        <div class="cart__modal__product__right">
+                            <div class="cart__modal__product__count">
+                                <div class="cart__modal__product__count__btn">-</div>
+                                <input type="number" value="1" />
+                                <div class="cart__modal__product__count__btn">+</div>
+                            </div>
+                            <div class="cart__modal__product__price">5 510 Р</div>
+                            <form action="" class="cart__modal__product__delete">
+                                <button><img src="img/trash.png" alt="" /></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <form action="" data-validate="data-validate" class="cart__modal__form">
+                    <input type="text" placeholder="Ваше имя" />
+                    <input type="text" placeholder="Телефон" name="phone" data-mask="phone" />
+                    <button class="btn">Заказать</button>
+                    <div class="cart__modal__form__label">Менеджер свяжется в рабочее время ....</div>
+                </form>
+            </div>
         </div>
-      </div>
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/jquery.lazy.min.js"></script>
-      <script src="js/mask.js"></script>
-      <script src="js/validate.js"></script>
-      <script src="js/main.js?v11"></script>
-      <!--script(src="https://api-maps.yandex.ru/2.1/?apikey=<fed58e3e-122a-4b9a-9b1c-60d19ebb0a39>&lang=ru_RU")-->
+        <!--=====================================END cart=====================================-->
+        <div data-modal="1" class="modal__wrapper">
+            <div class="modal">
+                <div class="modal__close"></div>
+                <div class="modal__title">Заказать звонок</div>
+                <form action="">
+                    <input type="text" placeholder="Ваше имя" class="input__border" />
+                    <input type="text" placeholder="Телефон" class="input__border" />
+                    <button class="btn">Получить консультацию</button>
+                    <div class="modal__form__alert">* Мы не рассылаем спам и номер никому не передаем</div>
+                </form>
+            </div>
+        </div>
+        <div data-modal="3" class="modal__wrapper">
+            <div class="modal">
+                <div class="modal__close"></div>
+                <div class="modal__title">Расчет решения</div>
+                <form action="">
+                    <input type="text" placeholder="Ваше имя" class="input__border" />
+                    <input type="text" placeholder="Телефон" class="input__border" />
+                    <button class="btn">Получить консультацию</button>
+                    <div class="modal__form__alert">* Мы не рассылаем спам и номер никому не передаем</div>
+                </form>
+            </div>
+        </div>
+        <div data-alert="coockie" class="coockie__alert">
+            <div class="container">
+                <div data-click-alert-close="coockie" class="coockie__alert__close"></div>
+                <div class="coockie__alert__message">Этот сайт использует файлы cookies для улучшения качества обслуживания. Продолжая использовать наш сайт, Вы соглашаетесь с использованием данных технологий и принимаете <a href="/">Политику конфиденциальности.</a></div>
+                <button data-click-alert-close="coockie" class="btn__border">Принять</button>
+            </div>
+        </div>
+        <div data-alert="next" class="alert__next__wrapper">
+            <div class="container">
+                <div class="alert__next">
+                    <div class="alert__next__top">
+                        <div class="alert__next__icon"><img src="img/alert__next__icon.png" alt="" /></div>
+                        <div class="alert__next__content">
+                            <div class="alert__next__message">Появился новый материал, который также поглощает запахи! Специально для аллергиков!</div>
+                            <div class="alert__next__btnblock"><a href="" class="btn__border">Смотреть</a>
+                                <div data-click-alert-close="next" class="alert__next__close">Нет, спасибо!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert__next__bottom">
+                        <div class="alert__next__btnblock mobile"><a href="" class="btn__border">Смотреть</a>
+                            <div data-click-alert-close="next" class="alert__next__close">Нет, спасибо!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-alert="pic" class="alert__pic__wrapper">
+            <div class="container">
+                <div class="alert__pic">
+                    <div class="alert__pic__top">
+                        <div class="alert__pic__img"></div>
+                        <div class="alert__pic__content">
+                            <div class="alert__pic__message">Появился новый материал, который также поглощает запахи! Специально для аллергиков!</div>
+                            <div class="alert__pic__btnblock"><a href="" class="btn__border">Смотреть</a>
+                                <div data-click-alert-close="pic" class="alert__pic__close">Нет, спасибо!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert__pic__bottom">
+                        <div class="alert__pic__btnblock mobile"><a href="" class="btn__border">Смотреть</a>
+                            <div data-click-alert-close="pic" class="alert__pic__close">Нет, спасибо!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-alert="popup-form-success" class="popup__form__wrapper">
+            <div class="popup__form"><img data-show="desktop" src="img/popup__form.svg" alt="" class="popup__form__img" /><img data-show="mobile" src="img/popup__form__mobile.svg" alt="" class="popup__form__img" />
+                <div data-click-alert-close="popup-form-success" class="popup__form__close"><img src="img/popup__form__close.svg" alt="" /></div>
+                <div class="popup__form__title">Запрос отправлен!</div>
+                <div class="popup__form__desc">Совсем скоро Вам поступит уведомление на электронную почту</div>
+                <button data-click-alert-close="popup-form-success" class="btn">Отлично!</button>
+            </div>
+        </div>
+        <div data-alert="popup-form-error" class="popup__form__wrapper">
+            <div class="popup__form"><img data-show="desktop" src="img/popup__form__error.svg" alt="" class="popup__form__img" /><img data-show="mobile" src="img/popup__form__error__mobile.svg" alt="" class="popup__form__img" />
+                <div data-click-alert-close="popup-form-error" class="popup__form__close"><img src="img/popup__form__close.svg" alt="" /></div>
+                <div class="popup__form__title">Что-то пошло не так</div>
+                <div class="popup__form__desc">Заявка не отправлена. Попробуйте еще раз.</div>
+                <button data-click-alert-close="popup-form-error" class="btn">Вернуться к форме</button>
+                <div class="popup__form__alert">* Возникли неполадки соединения с интернетом</div>
+            </div>
+        </div>
+        <!--============================POPUP CART SUCCESS==============================-->
+        <div data-alert="popup-cart-success" class="popup__form__wrapper">
+            <div class="popup__form"><img data-show="desktop" src="img/popup__cart.svg" alt="" class="popup__form__img" /><img data-show="mobile" src="img/popup__cart__mobile.svg" alt="" class="popup__form__img" />
+                <div data-click-alert-close="popup-form-success" class="popup__form__close"><img src="img/popup__form__close.svg" alt="" /></div>
+                <div class="popup__form__title">Заказ принят</div>
+                <div class="popup__form__desc">Менеджер свяжется в рабочее время ....</div>
+                <button data-click-alert-close="popup-form-success" class="btn">Готово</button>
+            </div>
+        </div>
+        <!--============================END POPUP CART SUCCESS===========================-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.lazy.min.js"></script>
+        <script src="js/mask.js"></script>
+        <script src="js/validate.js"></script>
+        <script src="js/main.js?v11"></script>
+        <!--script(src="https://api-maps.yandex.ru/2.1/?apikey=<fed58e3e-122a-4b9a-9b1c-60d19ebb0a39>&lang=ru_RU")-->
     </div>
-  </body>
+</body>
+
 </html>

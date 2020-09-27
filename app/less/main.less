@@ -21,6 +21,9 @@ html {
     font-size: 17px;
 }
 
+.hidden {
+    overflow: hidden;
+}
 .global__wapper {
     position: relative;
     overflow-x: hidden;
@@ -2179,3 +2182,371 @@ label.error {
     font-size: 17px;
 }
 //================END popup__form======================
+
+//================END cart__modal======================
+.cart__modal__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 3;
+    overflow-x: auto;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.cart__modal {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 684px;
+    margin-bottom: 100px;
+}
+.cart__modal__title {
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: #5e7f9c;
+    text-transform: uppercase;
+}
+
+.cart__modal__form {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(max-content,0));
+    grid-gap: 10px;
+    width: 360px;
+    input {
+        border: solid 1px #e0e0e0;
+    }
+    .btn {
+        width: 210px;
+    }
+    
+}
+.cart__modal__form__label {
+    font-size: 12px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.08;
+  letter-spacing: normal;
+  color: #4c4c4c;
+}
+
+.cart__modal__products {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(max-content, 0));
+    grid-gap: 30px;
+}
+.cart__modal__product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart__modal__product__left {
+    display: flex;
+    align-items: center;
+}
+.cart__modal__product__right {
+    display: flex;
+    align-items: center;
+}
+.cart__modal__product__img {
+    width: 57px;
+    height: 46px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+    border: solid 1px #e0e0e0;
+    margin-right: 12px;
+}
+.cart__modal__product__name {
+    font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: #4c4c4c;
+}
+.cart__modal__product__desc {
+    font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4c4c4c;
+}
+.cart__modal__product__count {
+    display: flex;
+    align-items: center;
+    input {
+        padding: 5px 0;
+        background-color: white;
+        width: 30px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.6;
+        letter-spacing: normal;
+        color: #4c4c4c;
+        &::-webkit-inner-spin-button {
+            appearance: none;
+        }
+        -moz-appearance: textfield;
+    }
+}
+.cart__modal__product__count__btn {
+    width: 24px;
+    height: 24px;
+    border: solid 1px #e0e0e0;
+    border-radius: 9px;
+    display: flex;
+    //align-items: center;
+    justify-content: center;
+    line-height: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.cart__modal__product__price {
+    font-size: 25px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: #bd6b2a;
+  margin-left: 23px;
+}
+.cart__modal__product__delete {
+    margin-left: 70px;
+    button {
+        cursor: pointer;
+        background: none;
+        border: none;
+    }
+}
+.mobile__cart {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+//================END cart__modal======================
+
+
+
+//=======================Всплывающее окно на карте =======================
+.customControl {
+    display: none;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 12px;
+    width: 750px;
+    box-shadow: 3px 2px 27px 0 rgba(0,0,0,0.18);
+    position: relative;
+}
+
+.closeButton {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../img/modal__close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+.content {
+    padding: 5px;
+    max-height: 545px;
+    overflow: auto;
+    width: 100%;
+}
+
+.mappanel__wrapper {
+    background-color: rgba(0,0,0,0.1);
+    width: 750px;
+}
+.mappanel {
+    padding: 25px;
+}
+.mappanel__title {
+    font-size: 20px;
+    color: #4C4C4C;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.mappanel__content1 {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 50px;
+    grid-row-gap: 30px;
+}
+.mappanel__content1__text {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 300;
+    height: 170px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.mappanel__content1__text__all {
+    height: auto;
+    transition: 0.3s;
+}
+.mappanel__content1__footer {
+    margin-top: 10px;
+}
+.mappanel__content1__readall {
+    color: #D27C37;
+    text-decoration: underline;
+    font-size: 17px;
+    cursor: pointer;
+}
+.mappanel__content1__footer {
+    display: flex;
+    justify-content: space-between;
+}
+.mappanel__content1__persone__name {
+    font-weight: bold;
+    text-align: right;
+}
+.mappanel__content2__persone__name {
+    font-weight: bold;
+    text-align: right;
+}
+.mappanel__content1__persone__loc {
+    text-align: right;
+    font-weight: 300;
+    margin-top: 3px;
+}
+.mappanel__content2__persone__loc {
+    text-align: right;
+    font-weight: 300;
+    margin-top: 3px;
+}
+.mappanel__content1__right {
+    padding-right: 20px;
+}
+.mappanel__content1__right__slider__item {
+    background-image: url(../img/soundproofing-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+}
+.mappanel__content1__right__slider__item__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FF506E;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+.mappanel__content1__right__slider {
+    .owl-dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    button.owl-dot {
+        width: 10px;
+        height: 10px;
+        background-color: #D8D8D8;
+        border-radius: 50%;
+        margin: 0 6px;
+        &.active {
+            background-color: #FF506E;
+        }
+    }
+}
+.mappanel__content1__audio {
+    audio {
+        width: 100%;
+    }
+}
+
+.mappanel__content2 {
+    padding-right: 20px;
+}
+.mappanel__content3 {
+    padding-right: 20px;
+}
+.mappanel__content2__audio {
+    margin-top: 20px;
+    audio {
+        width: 100%;
+    }
+}
+.mappanel__content2__persone {
+    text-align: right !important;
+    margin-top: 12px;
+    * {
+        text-align: right !important;
+    }
+}
+
+.mappanel__content3 {
+    margin-top: 15px;
+}
+.mappanel__content3__title {
+    font-weight: bold;
+    span {
+        font-weight: 300;
+    }
+}
+.mappanel__content3__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 13px;
+    grid-row-gap: 30px;
+    margin-top: 30px;
+}
+.mappanel__content3__item {
+    width: 100%;
+    padding-bottom: 100%;
+    background-image: url(../img/soundproofing-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+}
+.mappanel__content3__item__label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #5E7F9C;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+//=======================Всплывающее окно на карте =======================

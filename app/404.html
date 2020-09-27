@@ -1,203 +1,433 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width"/>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Vtishine 2</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
-    <link rel="stylesheet" href="css/main.css?v11"/>
-    <link rel="stylesheet" href="css/media.css?v11"/>
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/main.css?v11" />
+    <link rel="stylesheet" href="css/media.css?v11" />
+</head>
+
+<body>
     <div class="global__wapper">
-      <div class="mobile__head"><a href="" class="mobile__head__logo"></a>
-        <div class="mobile__head__sity">Челябинск</div><a href="tel:89514518479" class="mobile__head__phone"></a>
-        <div class="mobile__head__hamburger"></div>
-      </div>
-      <div class="mobile__select__city"><a href="">Москва</a><a href="">Укатеринбург</a></div>
-      <div class="head">
-        <div class="container">
-          <ul class="head__nav">
-            <li><a href="">Решения</a></li>
-            <li><a href="">Кейсы</a></li>
-            <li><a href="">Статьи</a></li>
-            <li><a href="">Звукоизоляционные материалы</a></li>
-          </ul>
-          <div class="head__location"><img data-src="img/head__location.svg" alt=""/>
-            <div class="head__location__title">Университетская набережная, 88</div>
-          </div>
+        <div class="mobile__head"><a href="" class="mobile__head__logo"></a>
+            <div class="mobile__head__sity">Челябинск</div><a href="tel:89514518479" class="mobile__head__phone"></a>
+            <!--==============mobile__cart====================-->
+            <div data-modal-link="cart" class="mobile__cart"><img src="img/cart-mobile.svg" alt="" /></div>
+            <!--==============mobile__cart====================-->
+            <div class="mobile__head__hamburger"></div>
         </div>
-      </div>
-      <div class="hero page__hero">
-        <div class="container">
-          <div class="hero__top"><a href="/" class="hero__logo"><img data-src="img/hero__logo.png" alt=""/></a>
-            <div class="hero__logo__desc page__hero__logo__desc">Продажа материалов. Подбор решения.<br/><span>Звукоизоляция под ключ.</span></div>
-            <div class="hero__phone"><a href="tel: +7 (351) 750 39 51">+7 (351) 750 39 51</a>
-              <button data-modal-link="data-modal-link" data-modal="1" class="btn__border">Заказать звонок</button>
-            </div>
-            <div class="hero__city">
-              <div data-click="select_city" class="hero__city__select">Челябинск
-                <div class="hero__city__select__arrow"> </div>
-                <div class="hero__city__select__submenu"><a href="">Москва	</a><a href="">Екатеринбург	</a></div>
-              </div>
-              <div class="hero__city__working">
-                <div class="hero__city__working__clock"></div>
-                <div class="hero__city__working__title">с 10 до 19:00 (пн-пт);<br/><span>до 16:00 (сб)</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="page404">
-        <div class="container">
-          <div class="page404__content"><img src="img/404.png" alt="" class="page404__content__img"/>
-            <h1 class="page404__title">Ой, ошибка …</h1>
-            <div class="page404__desc">Такой страницы не существует</div><a href="" class="page404__link">Перейти на главную страницу</a>
-          </div>
-        </div>
-      </div>
-      <footer>
-        <div class="container"><a href="" class="footer__logo"><img data-src="img/footer__logo.png" alt=""/></a>
-          <div class="footer__navs">
-            <ul class="footer__navs__citys">
-              <li> <a href="">Москва</a></li>
-              <li> <a href="">Екатеринбург</a></li>
-              <li> <a href="">Челябинск</a></li>
-            </ul>
-            <ul class="footer__navs__menu">
-              <li> <a href="">Статьи</a></li>
-              <li> <a href="">Магазин</a></li>
-              <li> <a href="">Способы оплаты</a></li>
-              <li> <a href="">Реквизиты</a></li>
-            </ul>
-          </div>
-          <div class="footer__contacts"><a href="tel:+7 (351) 750 39 51" class="footer__phone">+7 (351) 750 39 51</a>
-            <div class="footer__social"><a href=""><img data-src="img/footer__fb.svg" alt=""/></a><a href=""><img data-src="img/footer__vk.svg" alt=""/></a><a href=""><img data-src="img/footer__inst.svg" alt=""/></a><a href=""><img data-src="img/footer__youtube.svg" alt=""/></a></div>
-          </div>
-        </div>
-      </footer>
-      <div class="copyright">
-        <div class="container">
-          <div class="copyright__text">© Все права защищены.</div>
-        </div>
-      </div>
-      <div class="mobile__nav">
-        <ul class="mobile__nav__links">
-          <li><a href="">Решения</a></li>
-          <li><a href="">Кейсы</a></li>
-          <li><a href="">Статьи</a></li>
-          <li><a href="">Звукоизоляционные материалы</a></li>
-        </ul>
-        <button data-modal-link="data-modal-link" data-modal="1" class="btn__border">Заказать звонок</button>
-        <div class="mobile__nav__contacts">
-          <div class="mobile__nav__contacts__title">Мы находимся по адресу</div>
-          <div class="mobile__nav__contacts__adress">
-            <div class="mobile__nav__contacts__adress__icon"><img data-src="img/head__location.svg" alt=""/></div>
-            <div class="mobile__nav__contacts__adress__text">Университетская <br/><span>набережная, 88</span></div>
-          </div>
-          <div class="mobile__nav__contacts__worktime">
-            <div class="mobile__nav__contacts__worktime__icon"><img data-src="img/mobile__nav__clock.svg" alt=""/></div>
-            <div class="mobile__nav__contacts__worktime__text">с 10 до 19:00 (пн-пт);<br/><span>до 16:00 (сб)</span></div>
-          </div>
-        </div>
-      </div>
-      <div data-modal="1" class="modal__wrapper">
-        <div class="modal">
-          <div class="modal__close"></div>
-          <div class="modal__title">Заказать звонок</div>
-          <form action="">
-            <input type="text" placeholder="Ваше имя" class="input__border"/>
-            <input type="text" placeholder="Телефон" class="input__border"/>
-            <button class="btn">Получить консультацию</button>
-            <div class="modal__form__alert">* Мы не рассылаем спам и номер никому не передаем</div>
-          </form>
-        </div>
-      </div>
-      
-      <div data-modal="2" class="modal__wrapper">
-        <div class="modal">
-          <div class="modal__close"></div>
-          <div class="modal__title">Расчет решения</div>
-          <form action="">
-            <input type="text" placeholder="Ваше имя" class="input__border"/>
-            <input type="text" placeholder="Телефон" class="input__border"/>
-            <button class="btn">Получить консультацию</button>
-            <div class="modal__form__alert">* Мы не рассылаем спам и номер никому не передаем</div>
-          </form>
-        </div>
-      </div>
-      <div data-alert="coockie" class="coockie__alert">
-        <div class="container">
-          <div data-click-alert-close="coockie" class="coockie__alert__close"></div>
-          <div class="coockie__alert__message">Этот сайт использует файлы cookies для улучшения качества обслуживания. Продолжая использовать наш сайт, Вы соглашаетесь с использованием данных технологий и принимаете <a href="/">Политику конфиденциальности.</a></div>
-          <button data-click-alert-close="coockie" class="btn__border">Принять</button>
-        </div>
-      </div>
-      <div data-alert="next" class="alert__next__wrapper">
-        <div class="container">
-          <div class="alert__next">
-            <div class="alert__next__top">
-              <div class="alert__next__icon"><img src="img/alert__next__icon.png" alt=""/></div>
-              <div class="alert__next__content">
-                <div class="alert__next__message">Появился новый материал, который также поглощает запахи! Специально для аллергиков!</div>
-                <div class="alert__next__btnblock"><a href="" class="btn__border">Смотреть</a>
-                  <div data-click-alert-close="next" class="alert__next__close">Нет, спасибо!</div>
+        <div class="mobile__select__city"><a href="">Москва</a><a href="">Укатеринбург</a></div>
+        <div class="head">
+            <div class="container">
+                <ul class="head__nav">
+                    <li><a href="">Решения</a></li>
+                    <li><a href="">Кейсы</a></li>
+                    <li><a href="">Статьи</a></li>
+                    <li><a href="">Звукоизоляционные материалы</a></li>
+                </ul>
+                <div class="head__location"><img data-src="img/head__location.svg" alt="" />
+                    <div class="head__location__title">Университетская набережная, 88</div>
                 </div>
-              </div>
             </div>
-            <div class="alert__next__bottom">
-              <div class="alert__next__btnblock mobile"><a href="" class="btn__border">Смотреть</a>
-                <div data-click-alert-close="next" class="alert__next__close">Нет, спасибо!</div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div data-alert="pic" class="alert__pic__wrapper">
-        <div class="container">
-          <div class="alert__pic">
-            <div class="alert__pic__top">
-              <div class="alert__pic__img"></div>
-              <div class="alert__pic__content">
-                <div class="alert__pic__message">Появился новый материал, который также поглощает запахи! Специально для аллергиков!</div>
-                <div class="alert__pic__btnblock"><a href="" class="btn__border">Смотреть</a>
-                  <div data-click-alert-close="pic" class="alert__pic__close">Нет, спасибо!</div>
+        <div class="hero page__hero">
+            <div class="container">
+                <div class="hero__top"><a href="/" class="hero__logo"><img data-src="img/hero__logo.png" alt="" /></a>
+                    <div class="hero__logo__desc page__hero__logo__desc">Продажа материалов. Подбор решения.<br /><span>Звукоизоляция под ключ.</span></div>
+                    <div class="hero__phone"><a href="tel: +7 (351) 750 39 51">+7 (351) 750 39 51</a>
+                        <button data-modal-link="data-modal-link" data-modal="1" class="btn__border">Заказать звонок</button>
+                    </div>
+                    <div class="hero__city">
+                        <div data-click="select_city" class="hero__city__select">Челябинск <div class="hero__city__select__arrow"> </div>
+                            <div class="hero__city__select__submenu"><a href="">Москва </a><a href="">Екатеринбург </a></div>
+                        </div>
+                        <div class="hero__city__working">
+                            <div class="hero__city__working__clock"></div>
+                            <div class="hero__city__working__title">с 10 до 19:00 (пн-пт);<br /><span>до 16:00 (сб)</span></div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="alert__pic__bottom">
-              <div class="alert__pic__btnblock mobile"><a href="" class="btn__border">Смотреть</a>
-                <div data-click-alert-close="pic" class="alert__pic__close">Нет, спасибо!</div>
-              </div>
+        </div>
+        <div class="page404">
+            <div class="container">
+                <div class="page404__content"><img src="img/404.png" alt="" class="page404__content__img" />
+                    <h1 class="page404__title">Ой, ошибка …</h1>
+                    <div class="page404__desc">Такой страницы не существует</div><a href="" class="page404__link">Перейти на главную страницу</a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div data-alert="popup-form-success" class="popup__form__wrapper">
-        <div class="popup__form"><img data-show="desktop" src="img/popup__form.svg" alt="" class="popup__form__img"/><img data-show="mobile" src="img/popup__form__mobile.svg" alt="" class="popup__form__img"/>
-          <div data-click-alert-close="popup-form-success" class="popup__form__close"><img src="img/popup__form__close.svg" alt=""/></div>
-          <div class="popup__form__title">Запрос отправлен!</div>
-          <div class="popup__form__desc">Совсем скоро Вам поступит уведомление на электронную почту</div>
-          <button data-click-alert-close="popup-form-success" class="btn">Отлично!</button>
+        <footer>
+            <div class="container"><a href="" class="footer__logo"><img data-src="img/footer__logo.png" alt="" /></a>
+                <div class="footer__navs">
+                    <ul class="footer__navs__citys">
+                        <li> <a href="">Москва</a></li>
+                        <li> <a href="">Екатеринбург</a></li>
+                        <li> <a href="">Челябинск</a></li>
+                    </ul>
+                    <ul class="footer__navs__menu">
+                        <li> <a href="">Статьи</a></li>
+                        <li> <a href="">Магазин</a></li>
+                        <li> <a href="">Способы оплаты</a></li>
+                        <li> <a href="">Реквизиты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contacts"><a href="tel:+7 (351) 750 39 51" class="footer__phone">+7 (351) 750 39 51</a>
+                    <div class="footer__social"><a href=""><img data-src="img/footer__fb.svg" alt="" /></a><a href=""><img data-src="img/footer__vk.svg" alt="" /></a><a href=""><img data-src="img/footer__inst.svg" alt="" /></a><a href=""><img data-src="img/footer__youtube.svg" alt="" /></a></div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright__text">© Все права защищены.</div>
+            </div>
         </div>
-      </div>
-      <div data-alert="popup-form-error" class="popup__form__wrapper">
-        <div class="popup__form"><img data-show="desktop" src="img/popup__form__error.svg" alt="" class="popup__form__img"/><img data-show="mobile" src="img/popup__form__error__mobile.svg" alt="" class="popup__form__img"/>
-          <div data-click-alert-close="popup-form-error" class="popup__form__close"><img src="img/popup__form__close.svg" alt=""/></div>
-          <div class="popup__form__title">Что-то пошло не так</div>
-          <div class="popup__form__desc">Заявка не отправлена. Попробуйте еще раз.</div>
-          <button data-click-alert-close="popup-form-error" class="btn">Вернуться к форме</button>
-          <div class="popup__form__alert">* Возникли неполадки соединения с интернетом</div>
+        <div class="mobile__nav">
+            <ul class="mobile__nav__links">
+                <li><a href="">Решения</a></li>
+                <li><a href="">Кейсы</a></li>
+                <li><a href="">Статьи</a></li>
+                <li><a href="">Звукоизоляционные материалы</a></li>
+            </ul>
+            <button data-modal-link="data-modal-link" data-modal="1" class="btn__border">Заказать звонок</button>
+            <div class="mobile__nav__contacts">
+                <div class="mobile__nav__contacts__title">Мы находимся по адресу</div>
+                <div class="mobile__nav__contacts__adress">
+                    <div class="mobile__nav__contacts__adress__icon"><img data-src="img/head__location.svg" alt="" /></div>
+                    <div class="mobile__nav__contacts__adress__text">Университетская <br /><span>набережная, 88</span></div>
+                </div>
+                <div class="mobile__nav__contacts__worktime">
+                    <div class="mobile__nav__contacts__worktime__icon"><img data-src="img/mobile__nav__clock.svg" alt="" /></div>
+                    <div class="mobile__nav__contacts__worktime__text">с 10 до 19:00 (пн-пт);<br /><span>до 16:00 (сб)</span></div>
+                </div>
+            </div>
         </div>
-      </div>
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/jquery.lazy.min.js"></script>
-      <script src="js/mask.js"></script>
-      <script src="js/validate.js"></script>
-      <script src="js/main.js?v11"></script>
-      <!--script(src="https://api-maps.yandex.ru/2.1/?apikey=<fed58e3e-122a-4b9a-9b1c-60d19ebb0a39>&lang=ru_RU")-->
+        <!--=====================================cart=====================================-->
+        <div data-modal="cart" class="cart__modal__wrapper">
+            <div class="cart__modal">
+                <div data-modal-close="cart" class="modal__close"></div>
+                <div class="cart__modal__title">Корзина</div>
+                <div class="cart__modal__products">
+                    <div class="cart__modal__product">
+                        <div class="cart__modal__product__left">
+                            <div style="background-image: url(../img/product.jpg)" class="cart__modal__product__img"></div>
+                            <div class="cart__modal__product__text">
+                                <div class="cart__modal__product__name">Tecsound [Тексаунд] 70</div>
+                                <div class="cart__modal__product__desc">(10м х 1.5м х 14мм) 15м2</div>
+                            </div>
+                        </div>
+                        <div class="cart__modal__product__right">
+                            <div class="cart__modal__product__count">
+                                <div class="cart__modal__product__count__btn">-</div>
+                                <input type="number" value="1" />
+                                <div class="cart__modal__product__count__btn">+</div>
+                            </div>
+                            <div class="cart__modal__product__price">5 510 Р</div>
+                            <form action="" class="cart__modal__product__delete">
+                                <button><img src="img/trash.png" alt="" /></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cart__modal__product">
+                        <div class="cart__modal__product__left">
+                            <div style="background-image: url(../img/product.jpg)" class="cart__modal__product__img"></div>
+                            <div class="cart__modal__product__text">
+                                <div class="cart__modal__product__name">Tecsound [Тексаунд] 70</div>
+                                <div class="cart__modal__product__desc">(10м х 1.5м х 14мм) 15м2</div>
+                            </div>
+                        </div>
+                        <div class="cart__modal__product__right">
+                            <div class="cart__modal__product__count">
+                                <div class="cart__modal__product__count__btn">-</div>
+                                <input type="number" value="1" />
+                                <div class="cart__modal__product__count__btn">+</div>
+                            </div>
+                            <div class="cart__modal__product__price">5 510 Р</div>
+                            <form action="" class="cart__modal__product__delete">
+                                <button><img src="img/trash.png" alt="" /></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cart__modal__product">
+                        <div class="cart__modal__product__left">
+                            <div style="background-image: url(../img/product.jpg)" class="cart__modal__product__img"></div>
+                            <div class="cart__modal__product__text">
+                                <div class="cart__modal__product__name">Tecsound [Тексаунд] 70</div>
+                                <div class="cart__modal__product__desc">(10м х 1.5м х 14мм) 15м2</div>
+                            </div>
+                        </div>
+                        <div class="cart__modal__product__right">
+                            <div class="cart__modal__product__count">
+                                <div class="cart__modal__product__count__btn">-</div>
+                                <input type="number" value="1" />
+                                <div class="cart__modal__product__count__btn">+</div>
+                            </div>
+                            <div class="cart__modal__product__price">5 510 Р</div>
+                            <form action="" class="cart__modal__product__delete">
+                                <button><img src="img/trash.png" alt="" /></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cart__modal__product">
+                        <div class="cart__modal__product__left">
+                            <div style="background-image: url(../img/product.jpg)" class="cart__modal__product__img"></div>
+                            <div class="cart__modal__product__text">
+                                <div class="cart__modal__product__name">Tecsound [Тексаунд] 70</div>
+                                <div class="cart__modal__product__desc">(10м х 1.5м х 14мм) 15м2</div>
+                            </div>
+                        </div>
+                        <div class="cart__modal__product__right">
+                            <div class="cart__modal__product__count">
+                                <div class="cart__modal__product__count__btn">-</div>
+                                <input type="number" value="1" />
+                                <div class="cart__modal__product__count__btn">+</div>
+                            </div>
+                            <div class="cart__modal__product__price">5 510 Р</div>
+                            <form action="" class="cart__modal__product__delete">
+                                <button><img src="img/trash.png" alt="" /></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cart__modal__product">
+                        <div class="cart__modal__product__left">
+                            <div style="background-image: url(../img/product.jpg)" class="cart__modal__product__img"></div>
+                            <div class="cart__modal__product__text">
+                                <div class="cart__modal__product__name">Tecsound [Тексаунд] 70</div>
+                                <div class="cart__modal__product__desc">(10м х 1.5м х 14мм) 15м2</div>
+                            </div>
+                        </div>
+                        <div class="cart__modal__product__right">
+                            <div class="cart__modal__product__count">
+                                <div class="cart__modal__product__count__btn">-</div>
+                                <input type="number" value="1" />
+                                <div class="cart__modal__product__count__btn">+</div>
+                            </div>
+                            <div class="cart__modal__product__price">5 510 Р</div>
+                            <form action="" class="cart__modal__product__delete">
+                                <button><img src="img/trash.png" alt="" /></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cart__modal__product">
+                        <div class="cart__modal__product__left">
+                            <div style="background-image: url(../img/product.jpg)" class="cart__modal__product__img"></div>
+                            <div class="cart__modal__product__text">
+                                <div class="cart__modal__product__name">Tecsound [Тексаунд] 70</div>
+                                <div class="cart__modal__product__desc">(10м х 1.5м х 14мм) 15м2</div>
+                            </div>
+                        </div>
+                        <div class="cart__modal__product__right">
+                            <div class="cart__modal__product__count">
+                                <div class="cart__modal__product__count__btn">-</div>
+                                <input type="number" value="1" />
+                                <div class="cart__modal__product__count__btn">+</div>
+                            </div>
+                            <div class="cart__modal__product__price">5 510 Р</div>
+                            <form action="" class="cart__modal__product__delete">
+                                <button><img src="img/trash.png" alt="" /></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cart__modal__product">
+                        <div class="cart__modal__product__left">
+                            <div style="background-image: url(../img/product.jpg)" class="cart__modal__product__img"></div>
+                            <div class="cart__modal__product__text">
+                                <div class="cart__modal__product__name">Tecsound [Тексаунд] 70</div>
+                                <div class="cart__modal__product__desc">(10м х 1.5м х 14мм) 15м2</div>
+                            </div>
+                        </div>
+                        <div class="cart__modal__product__right">
+                            <div class="cart__modal__product__count">
+                                <div class="cart__modal__product__count__btn">-</div>
+                                <input type="number" value="1" />
+                                <div class="cart__modal__product__count__btn">+</div>
+                            </div>
+                            <div class="cart__modal__product__price">5 510 Р</div>
+                            <form action="" class="cart__modal__product__delete">
+                                <button><img src="img/trash.png" alt="" /></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cart__modal__product">
+                        <div class="cart__modal__product__left">
+                            <div style="background-image: url(../img/product.jpg)" class="cart__modal__product__img"></div>
+                            <div class="cart__modal__product__text">
+                                <div class="cart__modal__product__name">Tecsound [Тексаунд] 70</div>
+                                <div class="cart__modal__product__desc">(10м х 1.5м х 14мм) 15м2</div>
+                            </div>
+                        </div>
+                        <div class="cart__modal__product__right">
+                            <div class="cart__modal__product__count">
+                                <div class="cart__modal__product__count__btn">-</div>
+                                <input type="number" value="1" />
+                                <div class="cart__modal__product__count__btn">+</div>
+                            </div>
+                            <div class="cart__modal__product__price">5 510 Р</div>
+                            <form action="" class="cart__modal__product__delete">
+                                <button><img src="img/trash.png" alt="" /></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cart__modal__product">
+                        <div class="cart__modal__product__left">
+                            <div style="background-image: url(../img/product.jpg)" class="cart__modal__product__img"></div>
+                            <div class="cart__modal__product__text">
+                                <div class="cart__modal__product__name">Tecsound [Тексаунд] 70</div>
+                                <div class="cart__modal__product__desc">(10м х 1.5м х 14мм) 15м2</div>
+                            </div>
+                        </div>
+                        <div class="cart__modal__product__right">
+                            <div class="cart__modal__product__count">
+                                <div class="cart__modal__product__count__btn">-</div>
+                                <input type="number" value="1" />
+                                <div class="cart__modal__product__count__btn">+</div>
+                            </div>
+                            <div class="cart__modal__product__price">5 510 Р</div>
+                            <form action="" class="cart__modal__product__delete">
+                                <button><img src="img/trash.png" alt="" /></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cart__modal__product">
+                        <div class="cart__modal__product__left">
+                            <div style="background-image: url(../img/product.jpg)" class="cart__modal__product__img"></div>
+                            <div class="cart__modal__product__text">
+                                <div class="cart__modal__product__name">Tecsound [Тексаунд] 70</div>
+                                <div class="cart__modal__product__desc">(10м х 1.5м х 14мм) 15м2</div>
+                            </div>
+                        </div>
+                        <div class="cart__modal__product__right">
+                            <div class="cart__modal__product__count">
+                                <div class="cart__modal__product__count__btn">-</div>
+                                <input type="number" value="1" />
+                                <div class="cart__modal__product__count__btn">+</div>
+                            </div>
+                            <div class="cart__modal__product__price">5 510 Р</div>
+                            <form action="" class="cart__modal__product__delete">
+                                <button><img src="img/trash.png" alt="" /></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <form action="" data-validate="data-validate" class="cart__modal__form">
+                    <input type="text" placeholder="Ваше имя" />
+                    <input type="text" placeholder="Телефон" name="phone" data-mask="phone" />
+                    <button class="btn">Заказать</button>
+                    <div class="cart__modal__form__label">Менеджер свяжется в рабочее время ....</div>
+                </form>
+            </div>
+        </div>
+        <!--=====================================END cart=====================================-->
+        <div data-modal="1" class="modal__wrapper">
+            <div class="modal">
+                <div class="modal__close"></div>
+                <div class="modal__title">Заказать звонок</div>
+                <form action="">
+                    <input type="text" placeholder="Ваше имя" class="input__border" />
+                    <input type="text" placeholder="Телефон" class="input__border" />
+                    <button class="btn">Получить консультацию</button>
+                    <div class="modal__form__alert">* Мы не рассылаем спам и номер никому не передаем</div>
+                </form>
+            </div>
+        </div>
+        <div data-modal="3" class="modal__wrapper">
+            <div class="modal">
+                <div class="modal__close"></div>
+                <div class="modal__title">Расчет решения</div>
+                <form action="">
+                    <input type="text" placeholder="Ваше имя" class="input__border" />
+                    <input type="text" placeholder="Телефон" class="input__border" />
+                    <button class="btn">Получить консультацию</button>
+                    <div class="modal__form__alert">* Мы не рассылаем спам и номер никому не передаем</div>
+                </form>
+            </div>
+        </div>
+        <div data-alert="coockie" class="coockie__alert">
+            <div class="container">
+                <div data-click-alert-close="coockie" class="coockie__alert__close"></div>
+                <div class="coockie__alert__message">Этот сайт использует файлы cookies для улучшения качества обслуживания. Продолжая использовать наш сайт, Вы соглашаетесь с использованием данных технологий и принимаете <a href="/">Политику конфиденциальности.</a></div>
+                <button data-click-alert-close="coockie" class="btn__border">Принять</button>
+            </div>
+        </div>
+        <div data-alert="next" class="alert__next__wrapper">
+            <div class="container">
+                <div class="alert__next">
+                    <div class="alert__next__top">
+                        <div class="alert__next__icon"><img src="img/alert__next__icon.png" alt="" /></div>
+                        <div class="alert__next__content">
+                            <div class="alert__next__message">Появился новый материал, который также поглощает запахи! Специально для аллергиков!</div>
+                            <div class="alert__next__btnblock"><a href="" class="btn__border">Смотреть</a>
+                                <div data-click-alert-close="next" class="alert__next__close">Нет, спасибо!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert__next__bottom">
+                        <div class="alert__next__btnblock mobile"><a href="" class="btn__border">Смотреть</a>
+                            <div data-click-alert-close="next" class="alert__next__close">Нет, спасибо!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-alert="pic" class="alert__pic__wrapper">
+            <div class="container">
+                <div class="alert__pic">
+                    <div class="alert__pic__top">
+                        <div class="alert__pic__img"></div>
+                        <div class="alert__pic__content">
+                            <div class="alert__pic__message">Появился новый материал, который также поглощает запахи! Специально для аллергиков!</div>
+                            <div class="alert__pic__btnblock"><a href="" class="btn__border">Смотреть</a>
+                                <div data-click-alert-close="pic" class="alert__pic__close">Нет, спасибо!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert__pic__bottom">
+                        <div class="alert__pic__btnblock mobile"><a href="" class="btn__border">Смотреть</a>
+                            <div data-click-alert-close="pic" class="alert__pic__close">Нет, спасибо!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-alert="popup-form-success" class="popup__form__wrapper">
+            <div class="popup__form"><img data-show="desktop" src="img/popup__form.svg" alt="" class="popup__form__img" /><img data-show="mobile" src="img/popup__form__mobile.svg" alt="" class="popup__form__img" />
+                <div data-click-alert-close="popup-form-success" class="popup__form__close"><img src="img/popup__form__close.svg" alt="" /></div>
+                <div class="popup__form__title">Запрос отправлен!</div>
+                <div class="popup__form__desc">Совсем скоро Вам поступит уведомление на электронную почту</div>
+                <button data-click-alert-close="popup-form-success" class="btn">Отлично!</button>
+            </div>
+        </div>
+        <div data-alert="popup-form-error" class="popup__form__wrapper">
+            <div class="popup__form"><img data-show="desktop" src="img/popup__form__error.svg" alt="" class="popup__form__img" /><img data-show="mobile" src="img/popup__form__error__mobile.svg" alt="" class="popup__form__img" />
+                <div data-click-alert-close="popup-form-error" class="popup__form__close"><img src="img/popup__form__close.svg" alt="" /></div>
+                <div class="popup__form__title">Что-то пошло не так</div>
+                <div class="popup__form__desc">Заявка не отправлена. Попробуйте еще раз.</div>
+                <button data-click-alert-close="popup-form-error" class="btn">Вернуться к форме</button>
+                <div class="popup__form__alert">* Возникли неполадки соединения с интернетом</div>
+            </div>
+        </div>
+        <!--============================POPUP CART SUCCESS==============================-->
+        <div data-alert="popup-cart-success" class="popup__form__wrapper">
+            <div class="popup__form"><img data-show="desktop" src="img/popup__cart.svg" alt="" class="popup__form__img" /><img data-show="mobile" src="img/popup__cart__mobile.svg" alt="" class="popup__form__img" />
+                <div data-click-alert-close="popup-form-success" class="popup__form__close"><img src="img/popup__form__close.svg" alt="" /></div>
+                <div class="popup__form__title">Заказ принят</div>
+                <div class="popup__form__desc">Менеджер свяжется в рабочее время ....</div>
+                <button data-click-alert-close="popup-form-success" class="btn">Готово</button>
+            </div>
+        </div>
+        <!--============================END POPUP CART SUCCESS===========================-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.lazy.min.js"></script>
+        <script src="js/mask.js"></script>
+        <script src="js/validate.js"></script>
+        <script src="js/main.js?v11"></script>
+        <!--script(src="https://api-maps.yandex.ru/2.1/?apikey=<fed58e3e-122a-4b9a-9b1c-60d19ebb0a39>&lang=ru_RU")-->
     </div>
-  </body>
+</body>
+
 </html>
