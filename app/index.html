@@ -7,7 +7,6 @@
     <title>Vtishine 2</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
     <link rel="stylesheet" href="css/main.css?v11" />
     <link rel="stylesheet" href="css/media.css?v11" />
 </head>
@@ -665,7 +664,10 @@
                         <option value="4">Проведена экспертиза</option>
                     </select>
                 </div>
-                <div id="map" class="objects__map"></div>
+                <div class="objects__map__wrapper">
+                    <div id="map" class="objects__map"></div>
+                    <div class="objects__map__pannel" id="objects__map__pannel">Панель</div>
+                </div>
             </div>
         </div>
         <div class="reviews">
@@ -875,7 +877,6 @@
         <script src="js/jquery.lazy.min.js"></script>
         <script src="https://api-maps.yandex.ru/2.1/?apikey=d93bb56d-8355-418a-909f-cf4f0a9bb5d0&amp;lang=ru_RU"></script>
         <!--script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")-->
-        <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.js"></script>
         <script src="js/mapbasics.js?v11"></script>
         <script src="js/mask.js"></script>
         <script src="js/validate.js"></script>

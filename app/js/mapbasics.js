@@ -189,7 +189,8 @@ ymaps.ready(['Panel']).then(function () {
         // Получим ссылку на геообъект, по которому кликнул пользователь.
         var target = e.get('target');
         // Зададим контент боковой панели.
-        panel.setContent(target.properties.get('balloonContent'));
+        //panel.setContent(target.properties.get('balloonContent'));
+        $('.objects__map__pannel').html(target.properties.get('balloonContent'));
         // Переместим центр карты по координатам метки с учётом заданных отступов.
         map.panTo(target.geometry.getCoordinates(), {useMapMargin: true});
 
@@ -202,19 +203,14 @@ ymaps.ready(['Panel']).then(function () {
             $('.mappanel__content1__text').eq(index).toggleClass('mappanel__content1__text__all');
             $(this).css('opacity','0');
         });
-
-        setInterval(function(){
-            var myElement = document.getElementById('mappannel');
-            new SimpleBar(myElement, { autoHide: true });
-            console.log('работает');
-        }, 1000);
     });
     // Подпишемся на событие клика по коллекции.
     review.events.add('click', function (e) {
         // Получим ссылку на геообъект, по которому кликнул пользователь.
         var target = e.get('target');
         // Зададим контент боковой панели.
-        panel.setContent(target.properties.get('balloonContent'));
+        //panel.setContent(target.properties.get('balloonContent'));
+        $('.objects__map__pannel').html(target.properties.get('balloonContent'));
         // Переместим центр карты по координатам метки с учётом заданных отступов.
         map.panTo(target.geometry.getCoordinates(), {useMapMargin: true});
 
@@ -233,7 +229,8 @@ ymaps.ready(['Panel']).then(function () {
         // Получим ссылку на геообъект, по которому кликнул пользователь.
         var target = e.get('target');
         // Зададим контент боковой панели.
-        panel.setContent(target.properties.get('balloonContent'));
+        //panel.setContent(target.properties.get('balloonContent'));
+        $('.objects__map__pannel').html(target.properties.get('balloonContent'));
         // Переместим центр карты по координатам метки с учётом заданных отступов.
         map.panTo(target.geometry.getCoordinates(), {useMapMargin: true});
 

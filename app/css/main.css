@@ -2821,14 +2821,19 @@ td {
   -webkit-box-pack: center;
           justify-content: center;
 }
-.customControl {
-  display: none;
+.objects__map__wrapper {
+  position: relative;
+}
+.objects__map__pannel {
+  position: absolute;
+  top: 20px;
+  left: 20px;
   background-color: #fff;
-  padding: 5px;
   border-radius: 12px;
   width: 750px;
   box-shadow: 3px 2px 27px 0 rgba(0, 0, 0, 0.18);
-  position: relative;
+  max-height: calc(100% - 40px);
+  overflow-y: auto;
 }
 .closeButton {
   width: 55px;
@@ -2842,18 +2847,12 @@ td {
   background-size: contain;
   cursor: pointer;
 }
-.content {
-  padding: 5px;
-  max-height: 545px;
-  overflow: auto;
-  width: 100%;
-}
 .mappanel__wrapper {
   background-color: rgba(0, 0, 0, 0.1);
   width: 750px;
 }
 .mappanel {
-  padding: 25px;
+  padding: 30px;
 }
 .mappanel__title {
   font-size: 20px;
